@@ -12,7 +12,7 @@ import logo from '../../assets/images/logo.png';
 const MyProfile = () => {
   const nav = useNavigate();
   return (
-    <Stack minH={'100vh'} py={{ base: '0',sm:"2", md: '6' }} w={'100%'} bg={'#050826'}>
+    <Stack minH={'100vh'} py={{ base: '2',sm:"2", md: '6' }} justifyContent={{base:'space-between',md:'-moz-initial'}} w={'100%'} bg={'#050826'}>
       {/* mobile header */}
       <Stack
         alignItems={'center'}

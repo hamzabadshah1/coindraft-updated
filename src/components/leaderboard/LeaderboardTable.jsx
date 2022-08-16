@@ -1,55 +1,532 @@
-import React from 'react'
+import React from 'react';
 import {
-    Table,
-    Thead,
-    Tbody,
-    Tfoot,
-    Tr,
-    Th,
-    Td,
-    TableCaption,
-    TableContainer,
-    Stack,
-    Text,
-} from '@chakra-ui/react'
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer,
+  Stack,
+  Text,
+  Heading,
+} from '@chakra-ui/react';
 
-import '../../App.css'
+import '../../App.css';
 
 const LeaderboardTable = () => {
-    return (
-        <>
-            <Stack direction={'row'} color={'black'} className="button-border" p={'0 !important'} bgColor={'white'} borderRadius={'lg'}>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={{ base: '1.5', sm: '1' }} align={'center'}>Rank</Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'4'} align={'center'}>Player Name</Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'3'} align={'center'}>Gains</Text>
-                <Text fontWeight={'bold'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'3'} align={'center'}>Community</Text>
-            </Stack>
-            <Stack direction={'row'} color={'black'} className="button-border" p={'0 !important'} bgColor={'white'} borderRadius={'lg'}>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={{ base: '1.5', sm: '1' }} align={'center'}>1.</Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'4'} align={'center'}></Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'3'} align={'center'}></Text>
-                <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
-            </Stack>
-            <Stack direction={'row'} color={'black'} className="button-border" p={'0 !important'} bgColor={'white'} borderRadius={'lg'}>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={{ base: '1.5', sm: '1' }} align={'center'}>2.</Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'4'} align={'center'}></Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'3'} align={'center'}></Text>
-                <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
-            </Stack>
-            <Stack direction={'row'} color={'black'} className="button-border" p={'0 !important'} bgColor={'white'} borderRadius={'lg'}>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={{ base: '1.5', sm: '1' }} align={'center'}>3.</Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'4'} align={'center'}></Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'3'} align={'center'}></Text>
-                <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
-            </Stack>
-            <Stack direction={'row'} color={'black'} className="button-border" p={'0 !important'} bgColor={'white'} borderRadius={'lg'}>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={{ base: '1.5', sm: '1' }} align={'center'}>4.</Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'4'} align={'center'}></Text>
-                <Text fontWeight={'bold'} borderRight={'1px solid black'} fontSize={{ base: '0.7em', md: 'lg' }} flex={'3'} align={'center'}></Text>
-                <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
-            </Stack>
-        </>
-    )
-}
+  return (
+    <>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          Rank
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        >
+          Player Name
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        >
+          Gains
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        >
+          Community
+        </Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          1.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          2.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          3.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          4.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          5.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          6.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          7.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          8.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          9.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          10.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          11.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          12.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          13.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+      <Stack
+        direction={'row'}
+        color={'black'}
+        className="button-border"
+        p={'0 !important'}
+        bgColor={'white'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={{ base: '1.5', sm: '1' }}
+          align={'center'}
+        >
+          14.
+        </Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'4'}
+          align={'center'}
+        ></Text>
+        <Text
+          fontWeight={'bold'}
+          borderRight={'1px solid black'}
+          fontSize={{ base: '0.7em', md: 'lg' }}
+          flex={'3'}
+          align={'center'}
+        ></Text>
+        <Text fontWeight={'bold'} flex={'3'} align={'center'}></Text>
+      </Stack>
+    </>
+  );
+};
 
-export default LeaderboardTable
+export default LeaderboardTable;

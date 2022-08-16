@@ -14,6 +14,7 @@ import React from 'react';
 import '../../App.css';
 import logo from '../../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
+import { unhover } from '@testing-library/user-event/dist/hover';
 
 const ContestLobby = () => {
   const nav = useNavigate();
@@ -25,7 +26,7 @@ const ContestLobby = () => {
         px={{ base: '2', sm: '12' }}
         py={{ base: '4', md: '10' }}
         spacing={{ base: '6', md: '12' }}
-        justify={{ base: 'space-between', md: 'center' }}
+        justify={{ base: 'space-between', md: 'flex-start' }}
         align={'center'}
       >
         {/* Heading Container */}
@@ -36,7 +37,7 @@ const ContestLobby = () => {
           justify={{ base: 'space-between', md: 'inherit' }}
         >
           <Heading
-            fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
+            fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
           >
@@ -135,11 +136,12 @@ const ContestLobby = () => {
           <Stack
             mx={{ base: '0 !important', md: '4 !important' }}
             flex={'1'}
-            justify={'end'}
+            // justify={'end'}
+            spacing="5"
           >
             <Button
               className="button-border"
-              onClick={() => nav('/createcontest')}
+              // onClick={() => nav('/createcontest')}
               _hover={{}}
               _focus={{}}
               _active={{}}
@@ -152,18 +154,17 @@ const ContestLobby = () => {
               className="example"
               direction={{ base: 'column', lg: 'row' }}
               spacing={'4'}
-              overflow={'auto'}
-              h={'full'}
               borderRadius={'lg'}
             >
               {/* Card Container */}
               <Stack
+                minH={'fit-content'}
                 direction={'row'}
                 color={'#96A9DE'}
                 p={'4'}
                 bgColor={'#25294A'}
                 borderRadius={'lg'}
-                w={{ base: 'full', lg: '50%' }}
+                w={{ base: 'full', lg: '60%' }}
                 justify={'space-between'}
               >
                 {/* Left Side Content */}
@@ -172,15 +173,21 @@ const ContestLobby = () => {
                   w={{ base: '50%', md: '50%' }}
                   h={'full'}
                 >
-                  <Text fontSize={{ base: 'xs', sm: 'md', md: 'xl' }}>
+                  <Text
+                    minW={'fit-content'}
+                    fontSize={{ base: 'xs', sm: 'md', md: 'lg' }}
+                  >
                     Contest Id: #123456789
                   </Text>
-                  <Stack fontWeight={'bold'} spacing={'0'} justify={'end'}>
+                  <Stack fontWeight={'bold'} spacing={'1'} justify={'end'}>
                     <Text
                       color={'white'}
                       fontSize={{ base: 'xs', sm: 'md', md: 'xl' }}
                     >
-                      <chakra.span id="button-text">Mode:</chakra.span>1v1{' '}
+                      <chakra.span id="button-text" fontWeight={'bold'}>
+                        Mode:
+                      </chakra.span>
+                      1v1{' '}
                     </Text>
                     <Text
                       color={'white'}
@@ -261,7 +268,7 @@ const ContestLobby = () => {
                     </Stack>
                   </Stack>
                   <Button
-                  onClick={()=>nav('/')}
+                    onClick={() => nav('/')}
                     _hover={{}}
                     _focus={{}}
                     _active={{}}
@@ -275,13 +282,6 @@ const ContestLobby = () => {
                 </Stack>
               </Stack>
             </Stack>
-            {/* Additional Stack */}
-            <Stack
-              Stack
-              w={'36'}
-              display={{ base: 'none', md: 'inherit' }}
-              align={'center'}
-            ></Stack>
           </Stack>
         </Stack>
         {/* Home Mibile Screen Button */}

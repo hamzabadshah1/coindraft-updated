@@ -51,7 +51,8 @@ const Menu = () => {
           <Spacer />
           <Stack>
             <Image
-              _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+            onClick={()=>nav('/home')}
+              _hover={{ cursor: 'pointer'}}
               w={'14'}
               src={logo}
             />

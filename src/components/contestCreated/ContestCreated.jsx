@@ -12,15 +12,16 @@ const ContestCreated = () => {
     <>
       <Stack
         bg={'#050826'}
-        minH={'100vh'}
+        h={'100vh'}
+        maxH={'100vh'}
         px={{ base: '2', sm: '12' }}
-        py={{ base: '12', md: '4' }}
+        py={{ base: '5', md: '4' }}
         spacing={{ base: '6' }}
         align={'center'}
         justify={{ base: 'space-between', md: 'center' }}
       >
         {/* Contest Created Header */}
-        <Stack>
+        <Stack w={'100%'}>
           <Stack
             w={'full'}
             align={{ base: 'end', md: 'center' }}
@@ -32,12 +33,12 @@ const ContestCreated = () => {
               src={logo}
             />
           </Stack>
-          <Heading id="button-text">Contest Created!</Heading>
+          <Heading fontSize={'2xl'} textAlign={'center'} id="button-text">Contest Created!</Heading>
         </Stack>
         {/* Success Image */}
         <Image
           _hover={{ cursor: 'pointer' }}
-          w={{ base: '60', md: '48' }}
+          w={{ base: '48', md: '36' }}
           src={contest}
         />
         <Stack align={'center'}>
@@ -50,7 +51,7 @@ const ContestCreated = () => {
               <Stack align={'center'}>
                 <Image
                   _hover={{ cursor: 'pointer' }}
-                  w={{ base: '12' }}
+                  w={{ base: '10' }}
                   src={link1}
                 />
                 <Text color={'white'}>Email</Text>
@@ -58,7 +59,7 @@ const ContestCreated = () => {
               <Stack align={'center'}>
                 <Image
                   _hover={{ cursor: 'pointer' }}
-                  w={{ base: '12' }}
+                  w={{ base: '10' }}
                   src={link2}
                 />
                 <Text color={'white'}>Text</Text>
@@ -66,7 +67,7 @@ const ContestCreated = () => {
               <Stack align={'center'}>
                 <Image
                   _hover={{ cursor: 'pointer' }}
-                  w={{ base: '12' }}
+                  w={{ base: '10' }}
                   src={link3}
                 />
                 <Text color={'white'}>Link</Text>
@@ -74,7 +75,7 @@ const ContestCreated = () => {
               <Stack align={'center'}>
                 <Image
                   _hover={{ cursor: 'pointer' }}
-                  w={{ base: '12' }}
+                  w={{ base: '10' }}
                   src={link4}
                 />
                 <Text color={'white'}>More</Text>
@@ -83,10 +84,11 @@ const ContestCreated = () => {
           </Stack>
           {/* Done Button */}
           <Button
+          size={'sm'}
             _hover={{}}
             _active={{}}
             _focus={{}}
-            w={{ base: '44' }}
+            w={{ base: '32' }}
             borderRadius={'full'}
             fontWeight={'bold'}
             bgGradient="linear(180deg, #FCFF00 10%, #3FFF13 100%)"

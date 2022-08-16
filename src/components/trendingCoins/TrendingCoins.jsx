@@ -12,13 +12,13 @@ const TrendingCoins = () => {
       >
         {/* home buttons */}
         <Stack
-          w={{ base: '100%', xl: '40%' }}
+          w={{ base: '100%', lg: '30%' }}
           pt={'12'}
           pb="4"
-          px={{ base: 10, md: 5, lg: 20 }}
+          pl={'10'}
         >
           {/* buttons */}
-          <Stack spacing={'4'} w={{ base: '100%', md: '40%', lg: '35%' }}>
+          <Stack spacing={'4'} w={{ base: '100%', md: '40%', lg: '60%' }}>
             <Button
               onClick={() => nav('/profile')}
               className="button-border"
@@ -132,13 +132,14 @@ const TrendingCoins = () => {
             </Button>
           </Stack>
         </Stack>
-        {/* lineup */}
+        {/* trending */}
         <Stack
-          w={{ base: '100%', xl: '60%' }}
+          w={{ base: '100%', lg: '70%' }}
           direction={{ base: 'column', md: 'row' }}
           px={{ base: 10, md: 5, lg: 20 }}
           py={'8'}
           justifyContent="space-between"
+          spacing={'8'}
         >
           {/* timer */}
           <Stack w={{ base: '100%', xl: '25%' }} justifyContent={'flex-end'}>
@@ -157,17 +158,32 @@ const TrendingCoins = () => {
               justifyContent={'center'}
               direction={'row'}
             >
-              <Stack>
-                <div className="countdowntimer-box"></div>
-                <h1>Days</h1>
+              <Stack alignItems={'center'}>
+                <div
+                  style={{ width: '2.8rem', height: '2.8rem' }}
+                  className="countdowntimer-box"
+                ></div>
+                <text style={{ fontSize: '0.8rem', fontWeight: '600' }}>
+                  Days
+                </text>
               </Stack>
-              <Stack>
-                <div className="countdowntimer-box"></div>
-                <h1>Hours</h1>
+              <Stack alignItems={'center'}>
+                <div
+                  style={{ width: '2.8rem', height: '2.8rem' }}
+                  className="countdowntimer-box"
+                ></div>
+                <text style={{ fontSize: '0.8rem', fontWeight: '600' }}>
+                  Hours
+                </text>
               </Stack>
-              <Stack>
-                <div className="countdowntimer-box"></div>
-                <h1>Minutes</h1>
+              <Stack alignItems={'center'}>
+                <div
+                  style={{ width: '2.8rem', height: '2.8rem' }}
+                  className="countdowntimer-box"
+                ></div>
+                <text style={{ fontSize: '0.8rem', fontWeight: '600' }}>
+                  Minutes
+                </text>
               </Stack>
             </Stack>
           </Stack>

@@ -22,8 +22,9 @@ const LeaderBoard = () => {
       <Stack
         bg={'#050826'}
         minH={'100vh'}
-        px={{ base: '2', sm: '12' }}
-        py={'10'}
+        justifyContent={{base:'space-between',md:'initial'}}
+        px={{ base: '3', sm: '12' }}
+        py={{base:'4',md:'10'}}
         spacing={'6'}
       >
         {/* Leaderboard heading Logo and Button */}
@@ -98,16 +99,16 @@ const LeaderBoard = () => {
           >
             <Heading
               as={'h1'}
-              fontSize={{ base: '2xl', sm: '5xl', md: '5xl' }}
+              fontSize={{ base: '2xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
               bgClip="text"
             >
               Leaderboard
             </Heading>
             <Image
-            onClick={() => nav('/home')}
+              onClick={() => nav('/home')}
               _hover={{ cursor: 'pointer' }}
-              w={{ base: '14', sm: '20', md: '28', lg: '40' }}
+              w={{ base: '14', sm: '20', md: '28', lg: '28' }}
               src={logo}
             />
           </Stack>
@@ -184,10 +185,22 @@ const LeaderBoard = () => {
           border={'1px solid white'}
           borderRadius={'lg'}
           p={'4'}
+          maxH={'50vh'}
+          overflow="auto"
           bgColor={'rgba(255, 255, 255, 0.2)'}
         >
           <LeaderboardTable />
         </Stack>
+        {/* Home Mibile Screen Button */}
+        <Button
+        alignSelf={'center'}
+          onClick={() => nav('/home')}
+          w={'40vw'}
+          display={{ base: 'inherit', md: 'none' }}
+          bgGradient="linear(180deg, #FCFF00 10%, #3FFF13 100%)"
+        >
+          Home
+        </Button>
       </Stack>
     </>
   );
