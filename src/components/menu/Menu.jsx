@@ -44,7 +44,7 @@ const Menu = () => {
             alignItems={'center'}
             minW={'fit-content'}
             fontSize={{ base: 'xl', md: '4xl' }}
-            className="gradient-color"
+            className="gradient-color heading"
           >
             Menu
           </Heading>

@@ -32,6 +32,7 @@ const GameSchedule = () => {
           justify={{ base: 'space-between', md: 'inherit' }}
         >
           <Heading
+          className='heading'
             fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"

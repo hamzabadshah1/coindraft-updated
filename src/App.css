@@ -1,3 +1,6 @@
+.heading{
+  font-family: 'zing-rust-demo-base', sans-serif !important;
+}
 /* button text gradient */
 #button-text {
   background: -webkit-linear-gradient(

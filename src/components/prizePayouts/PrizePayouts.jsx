@@ -109,7 +109,8 @@ const Drafts = () => {
               justify={{ base: 'space-between', md: 'inherit' }}
             >
             <Heading
-              fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
+            className='heading'
+              fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
               bgClip="text"
             >

@@ -98,6 +98,7 @@ const LeaderBoard = () => {
             justify={{ base: 'space-between', md: 'inherit' }}
           >
             <Heading
+          className='heading'
               as={'h1'}
               fontSize={{ base: '2xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"

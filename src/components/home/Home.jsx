@@ -33,6 +33,7 @@ const Home = () => {
           direction={'row'}
         >
           <Heading
+          className='heading'
             _hover={{ cursor: 'pointer' }}
             id="button-text"
             fontSize={'xl'}

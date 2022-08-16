@@ -12,7 +12,7 @@ import logo from '../../assets/images/logo.png';
 const MyProfile = () => {
   const nav = useNavigate();
   return (
-    <Stack minH={'100vh'} py={{ base: '2',sm:"2", md: '6' }} justifyContent={{base:'space-between',md:'-moz-initial'}} w={'100%'} bg={'#050826'}>
+    <Stack minH={'100vh'} py={{ base: '2',sm:"2", md: '2' }} justifyContent={{base:'space-between',md:'-moz-initial'}} w={'100%'} bg={'#050826'}>
       {/* mobile header */}
       <Stack
         alignItems={'center'}
@@ -22,7 +22,7 @@ const MyProfile = () => {
         direction={'row'}
         justifyContent="space-between"
       >
-        <Heading fontSize={'xl'} className="gradient-color">
+        <Heading fontSize={'xl'} className="gradient-color heading">
           My Profile
         </Heading>
         <Image
@@ -43,13 +43,13 @@ const MyProfile = () => {
       <Stack
         spacing={{ base: '0', md: '3' }}
         px={{ base: '1', sm: '2', md: '0' }}
-        py={{ base: '2', sm: '4', md: '8' }}
+        py={{ base: '2', sm: '4', md: '2' }}
         direction={'row'}
       >
         {/* menu */}
         <Stack display={{ base: 'none', md: 'inherit' }} w="35%" pl={'10'}>
           {/* buttons */}
-          <Stack spacing={'7'} w={'50%'}>
+          <Stack spacing={'4'} w={'50%'}>
             <Button
               onClick={() => nav('/')}
               className="button-border"
@@ -122,7 +122,7 @@ const MyProfile = () => {
             </Button>
           </Stack>
 
-          <Stack w={'50%'} mt="10 !important" alignItems={'center'}>
+          <Stack w={'50%'} mt="6 !important" alignItems={'center'}>
             <Image
               _hover={{ cursor: 'pointer' }}
               w={'20'}

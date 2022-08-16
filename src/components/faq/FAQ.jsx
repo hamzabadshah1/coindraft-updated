@@ -51,7 +51,7 @@ const Learn = () => {
           <Stack alignItems={'center'}>
             <Heading
               fontSize={{ base: 'lg', md: '3xl' }}
-              className="faq-text"
+              className="faq-text heading"
               textAlign={'center'}
             >
               Our FAQ’s

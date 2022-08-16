@@ -27,7 +27,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  padding: 4px;
+padding: 4px;
   background: linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
