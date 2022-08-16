@@ -30,7 +30,7 @@ const Drafts = () => {
             px={10}
           >
             <Button
-            onClick={()=>nav('/')}
+              onClick={() => nav('/home')}
               className="button-border"
               color={'white'}
               _hover={{
@@ -44,7 +44,7 @@ const Drafts = () => {
               </Heading>
             </Button>
             <Button
-            onClick={()=>nav('/drafts')}
+              onClick={() => nav('/drafts')}
               className="button-border"
               color={'white'}
               _hover={{
@@ -58,7 +58,7 @@ const Drafts = () => {
               </Heading>
             </Button>
             <Button
-            onClick={()=>nav('/leaderboard')}
+              onClick={() => nav('/leaderboard')}
               className="button-border"
               color={'white'}
               _hover={{
@@ -312,7 +312,7 @@ const Drafts = () => {
                 mt={5}
               >
                 <Button
-                onClick={()=>nav('/')}
+                  onClick={() => nav('/home')}
                   _hover={{}}
                   height={'45px'}
                   bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}

@@ -60,7 +60,7 @@ const WalletConnect = () => {
       </Button>
       <Modal isCentered isOpen={isOpen} onClose={onClose} size={'xl'}>
         <ModalContent bgColor={'#050826'} textColor={'white'}>
-          <ModalHeader>Log in or Create an account</ModalHeader>
+          <ModalHeader>Connect Your Wallet</ModalHeader>
           <ModalCloseButton
             _focus={{
               boxShadow: 'none',

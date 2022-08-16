@@ -29,7 +29,7 @@ const MyProfile = () => {
           _hover={{ cursor: 'pointer' }}
           w={{ base: '9', sm: '12' }}
           src={logo}
-          onClick={() => nav('/')}
+          onClick={() => nav('/home')}
         />
       </Stack>
       <Heading
@@ -51,7 +51,7 @@ const MyProfile = () => {
           {/* buttons */}
           <Stack spacing={'7'} w={'50%'}>
             <Button
-              onClick={() => nav('/login')}
+              onClick={() => nav('/')}
               className="button-border"
               color={'white'}
               _hover={{
@@ -127,7 +127,7 @@ const MyProfile = () => {
               _hover={{ cursor: 'pointer' }}
               w={'20'}
               src={logo}
-              onClick={() => nav('/')}
+              onClick={() => nav('/home')}
             />
             <Text
               textAlign={'center'}
@@ -311,7 +311,7 @@ const MyProfile = () => {
       </Stack>
       {/* home button */}
       <Button
-        onClick={() => nav('/')}
+        onClick={() => nav('/home')}
         display={{ base: 'inherit', md: 'none' }}
         size={'sm'}
         mt={'3!important'}

@@ -7,6 +7,8 @@ import {
   Heading,
   Spacer,
   VStack,
+  SimpleGrid,
+  Box,
 } from '@chakra-ui/react';
 import logo from '../../assets/images/logo.png';
 import icon1 from '../../assets/images/icon8.png';
@@ -19,9 +21,9 @@ import icon7 from '../../assets/images/icon6.png';
 import icon8 from '../../assets/images/icon7.png';
 import icon9 from '../../assets/images/icon7.png';
 import icon10 from '../../assets/images/icon5-1.png';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 const Menu = () => {
-  const nav = useNavigate()
+  const nav = useNavigate();
   return (
     <Stack
       w={'full'}
@@ -35,7 +37,7 @@ const Menu = () => {
         spacing={'3'}
         px={{ base: '4', md: '0' }}
         w={{ base: '100%', md: '60%', lg: '40%' }}
-        pt={5}
+        pt={{base:'5',md:'2'}}
       >
         <HStack>
           <Heading
@@ -59,245 +61,199 @@ const Menu = () => {
         <Stack bgColor={'#25294A'} borderRadius={'15px'} p={4}>
           <HStack>
             <Stack>
-              <Text fontSize={'md'} color={'white'} fontWeight={'700'}>
+              <Text fontSize={{base:'sm',md:'md'}} color={'white'} fontWeight={'700'}>
                 Refer Your Friends!
               </Text>
-              <Text fontSize={'sm'} color={'white'}>
+              <Text fontSize={{base:'sm',md:'md'}}color={'white'}>
                 Refer Your Friends For Big Bonuses
               </Text>
             </Stack>
             <Spacer />
             <Stack>
-              <Text fontSize={'md'} color={'white'} fontWeight={'700'}>
-                Comming Soon!
+              <Text fontSize={{base:'sm',md:'md'}} color={'white'} fontWeight={'700'}>
+                Coming Soon!
               </Text>
             </Stack>
           </HStack>
         </Stack>
       </Stack>
 
-      <Stack
-        direction={'column'}
-        gap={4}
-        px={{ base: '4', md: '0' }}
+      <SimpleGrid
+      py={{base:"4",lg:'3'}}
+      px={{base:"4",md:'0'}}
+        columns={[1, 2, 3]}
         w={{ base: '100%', md: '60%', lg: '40%' }}
-        py={5}
+        spacing="20px"
       >
-        {/* row 1 */}
         <Stack
-          w={'100%'}
-          direction={{ base: 'column', md: 'row' }}
-          gap={4}
-          alignItems="center"
+          px={'8'}
+          py={'5'}
+          onClick={() => nav('/profile')}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
         >
           <Stack
-          onClick={()=>nav('/profile')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon1}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              My Profile
-            </Text>
-          </Stack>
-          <Stack
-          onClick={()=>nav('/drafts')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon2}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Draft Lineup
-            </Text>
-          </Stack>
-          <Stack
-          onClick={()=>nav('/contest')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon3}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              1v1 Lobby
-            </Text>
-          </Stack>
+            bgImage={icon1}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            My Profile
+          </Text>
         </Stack>
-        {/* row 2 */}
         <Stack
-          w={'100%'}
-          direction={{ base: 'column', md: 'row' }}
-          gap={4}
-          alignItems="center"
+          px={'4'}
+          py={'5'}
+          onClick={() => nav('/drafts')}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
         >
           <Stack
-          onClick={()=>nav('/leaderboard')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon4}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Leaderboard
-            </Text>
-          </Stack>
-          <Stack
-          onClick={()=>nav('/prize-payouts')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon5}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Prizes
-            </Text>
-          </Stack>
-          <Stack
-          onClick={()=>nav('/gameschedule')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon6}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            >
-              <Image src={icon10} w={'12'} />
-            </Stack>
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Game Schedule
-            </Text>
-          </Stack>
+            bgImage={icon2}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            Draft Lineup
+          </Text>
         </Stack>
-        {/* row 3 */}
         <Stack
-          w={'100%'}
-          direction={{ base: 'column', md: 'row' }}
-          gap={4}
-          alignItems="center"
+          px={'8'}
+          py={'5'}
+          onClick={() => nav('/leaderboard')}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
         >
           <Stack
-          onClick={()=>nav('/login')}
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon1}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Log Out
-            </Text>
-          </Stack>
-          <Stack
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon7}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Settings
-            </Text>
-          </Stack>
-          <Stack
-            _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
-            w={{ base: '60%', sm: '40%', md: '30%' }}
-            minH={'120px'}
-            alignItems={'center'}
-            justifyContent="center"
-            bgColor={'#25294A'}
-            borderRadius={'xl'}
-          >
-            <Stack
-              bgImage={icon9}
-              w={'12'}
-              h={'12'}
-              bgSize={'cover'}
-              bgPosition={'center'}
-            />
-            <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-              Contact
-            </Text>
-          </Stack>
+            bgImage={icon4}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            Leaderboard
+          </Text>
         </Stack>
-      </Stack>
+        <Stack
+          px={'8'}
+          py={'5'}
+          onClick={() => nav('/prize-payouts')}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
+        >
+          <Stack
+            bgImage={icon5}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            Prizes
+          </Text>
+        </Stack>
+        <Stack
+          px={'4'}
+          py={'5'}
+          onClick={() => nav('/gameschedule')}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
+        >
+          <Stack
+            bgImage={icon6}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          >
+            <Image src={icon10} w={'12'} />
+          </Stack>
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+          Game Schedule
+          </Text>
+        </Stack>
+        <Stack
+          px={'8'}
+          py={'5'}
+          onClick={() => nav('/')}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
+        >
+          <Stack
+            bgImage={icon1}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            Log Out
+          </Text>
+        </Stack>
+        <Stack
+          px={'8'}
+          py={'5'}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
+        >
+          <Stack
+            bgImage={icon7}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            Settings
+          </Text>
+        </Stack>
+        <Stack
+          px={'8'}
+          py={'5'}
+          _hover={{ cursor: 'pointer', bgColor: '#201c1c78' }}
+          alignItems={'center'}
+          justifyContent="center"
+          bgColor={'#25294A'}
+          borderRadius={'xl'}
+        >
+          <Stack
+            bgImage={icon9}
+            w={'12'}
+            h={'12'}
+            bgSize={'cover'}
+            bgPosition={'center'}
+          />
+          <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
+            Contact
+          </Text>
+        </Stack>
+      </SimpleGrid>
     </Stack>
   );
 };

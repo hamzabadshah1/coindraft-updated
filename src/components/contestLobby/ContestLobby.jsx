@@ -59,7 +59,7 @@ const ContestLobby = () => {
           >
             <Stack spacing={'3'}>
               <Button
-                onClick={() => nav('/')}
+                onClick={() => nav('/home')}
                 w={'36'}
                 color={'white'}
                 _hover={{
@@ -85,7 +85,7 @@ const ContestLobby = () => {
                 variant={'link'}
               >
                 <Heading fontSize={'md'} fontWeight="700">
-                  MY Lineup
+                  My Lineup
                 </Heading>
               </Button>
               <Button
@@ -121,7 +121,7 @@ const ContestLobby = () => {
             </Stack>
             <VStack>
               <Image
-                onClick={() => nav('/')}
+                onClick={() => nav('/home')}
                 _hover={{ cursor: 'pointer' }}
                 w={{ base: '14', sm: '32', md: '32', lg: '24' }}
                 src={logo}
@@ -261,7 +261,7 @@ const ContestLobby = () => {
                     </Stack>
                   </Stack>
                   <Button
-                  onClick={()=>nav('/login')}
+                  onClick={()=>nav('/')}
                     _hover={{}}
                     _focus={{}}
                     _active={{}}

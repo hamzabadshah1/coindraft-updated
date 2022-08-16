@@ -18,20 +18,20 @@ import NftMatchups from '../../components/nftMatchups/NftMatchups'
 const MainRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/home' element={<Home />} />
       <Route path='/menu' element={<Menu />} />
       <Route path='/trending-coins' element={<TrendingCoins />} />
       <Route path='/prize-payouts' element={<PrizePayouts />} />
       <Route path='/profile' element={<MyProfile />} />
       <Route path='/faq' element={<FAQ />} />
-      <Route path='/login' element={<Login />} />
+      <Route path='/' element={<Login />} />
       <Route path='/drafts' element={<Drafts />} />
       <Route path='/leaderboard' element={<LeaderBoard />} />
       <Route path='/gameschedule' element={<GameSchedule />} />
       <Route path='/contest' element={<ContestLobby />} />
       <Route path='/createcontest' element={<CreateContest />} />
       <Route path='/contestcreated' element={<ContestCreated />} />
-      <Route path='/nftmatchups' element={<NftMatchups />} />
+      {/* <Route path='/nftmatchups' element={<NftMatchups />} /> */}
     </Routes>
   )
 }

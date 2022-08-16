@@ -67,3 +67,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(123, 165, 25);
 }
+
+.faq::-webkit-scrollbar {
+  display: none;
+}

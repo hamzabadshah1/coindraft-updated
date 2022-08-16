@@ -348,7 +348,7 @@ const NftMatchups = () => {
         <Stack direction={'row'} justifyContent={'right'} width={'100%'}>
           <Stack width={'80%'} alignItems={'end'}>
             <Button
-              onClick={() => nav('/')}
+              onClick={() => nav('/home')}
               _hover={{}}
               py={5}
               size={'sm'}

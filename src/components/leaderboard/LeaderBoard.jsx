@@ -30,7 +30,7 @@ const LeaderBoard = () => {
         <Stack direction={'row'} align={'end'}>
           <Stack spacing={'3'} display={{ base: 'none', md: 'inherit' }}>
             <Button
-              onClick={() => nav('/')}
+              onClick={() => nav('/home')}
               w={'36'}
               color={'white'}
               _hover={{
@@ -56,7 +56,7 @@ const LeaderBoard = () => {
               variant={'link'}
             >
               <Heading fontSize={'md'} fontWeight="700">
-                MY Lineup
+                My Lineup
               </Heading>
             </Button>
             <Button
@@ -105,7 +105,7 @@ const LeaderBoard = () => {
               Leaderboard
             </Heading>
             <Image
-            onClick={() => nav('/')}
+            onClick={() => nav('/home')}
               _hover={{ cursor: 'pointer' }}
               w={{ base: '14', sm: '20', md: '28', lg: '40' }}
               src={logo}

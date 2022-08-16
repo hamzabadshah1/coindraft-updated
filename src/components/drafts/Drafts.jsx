@@ -6,13 +6,13 @@ import logo from '../../assets/images/logo.png';
 const Drafts = () => {
   const nav = useNavigate();
   return (
-    <Stack minH={'100vh'} w={'100%'} bg={'#050826'}>
+    <Stack py='4' w={'100%'} bg={'#050826'}>
       {/* mobile header */}
       <Stack
         alignItems={'center'}
         display={{ base: 'inherit', md: 'none' }}
         px={{ base: '4', md: '' }}
-        py="4"
+        pb="4"
         direction={'row'}
         justifyContent="space-between"
       >
@@ -21,7 +21,7 @@ const Drafts = () => {
           _hover={{ cursor: 'pointer' }}
           w={{ base: '9', sm: '12' }}
           src={logo}
-          onClick={() => nav('/')}
+          onClick={() => nav('/home')}
         />
       </Stack>
       {/*  */}
@@ -30,8 +30,7 @@ const Drafts = () => {
         <Stack
           display={{ base: 'none', md: 'inherit' }}
           w="50%"
-          pt={'10'}
-          pb="4"
+          pt={'4'}
           pl="12"
         >
           {/* buttons */}
@@ -46,7 +45,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
                 My Profile
               </Heading>
             </Button>
@@ -60,7 +59,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
                 Leaderboard
               </Heading>
             </Button>
@@ -74,7 +73,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
                 Prizes
               </Heading>
             </Button>
@@ -87,7 +86,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
                 Game Schedule
               </Heading>
             </Button>
@@ -100,22 +99,8 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
                 Settings
-              </Heading>
-            </Button>
-            <Button
-              onClick={() => nav('/login')}
-              className="button-border"
-              color={'white'}
-              _hover={{
-                bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
-                color: '#1A202C',
-              }}
-              variant={'link'}
-            >
-              <Heading fontSize={'sm'} fontWeight="500">
-                Logout
               </Heading>
             </Button>
             <Button
@@ -128,13 +113,27 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'md'} fontWeight="500">
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+                Logout
+              </Heading>
+            </Button>
+            <Button
+              onClick={() => nav('/home')}
+              className="button-border"
+              color={'white'}
+              _hover={{
+                bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
+                color: '#1A202C',
+              }}
+              variant={'link'}
+            >
+              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
                 Home
               </Heading>
             </Button>
           </Stack>
           {/* timer */}
-          <Stack py={'3'} w={{ base: '35%', xl: '25%' }}>
+          <Stack py="3" w={{ base: '35%', xl: '25%' }}>
             <Text
               textAlign={'center'}
               fontSize={'md'}
@@ -150,17 +149,32 @@ const Drafts = () => {
               justifyContent={'center'}
               direction={'row'}
             >
-              <Stack>
-                <div className="countdowntimer-box"></div>
-                <h1>Days</h1>
+              <Stack alignItems={'center'}>
+                <div
+                  style={{ width: '2.8rem', height: '2.8rem' }}
+                  className="countdowntimer-box"
+                ></div>
+                <text style={{ fontSize: '0.8rem', fontWeight: '600' }}>
+                  Days
+                </text>
               </Stack>
-              <Stack>
-                <div className="countdowntimer-box"></div>
-                <h1>Days</h1>
+              <Stack alignItems={'center'}>
+                <div
+                  style={{ width: '2.8rem', height: '2.8rem' }}
+                  className="countdowntimer-box"
+                ></div>
+                <text style={{ fontSize: '0.8rem', fontWeight: '600' }}>
+                  Hours
+                </text>
               </Stack>
-              <Stack>
-                <div className="countdowntimer-box"></div>
-                <h1>Days</h1>
+              <Stack alignItems={'center'}>
+                <div
+                  style={{ width: '2.8rem', height: '2.8rem' }}
+                  className="countdowntimer-box"
+                ></div>
+                <text style={{ fontSize: '0.8rem', fontWeight: '600' }}>
+                  Minutes
+                </text>
               </Stack>
             </Stack>
           </Stack>
@@ -169,7 +183,7 @@ const Drafts = () => {
               _hover={{ cursor: 'pointer' }}
               w={'14'}
               src={logo}
-              onClick={() => nav('/')}
+              onClick={() => nav('/home')}
             />
             <Text
               textAlign={'center'}
@@ -184,14 +198,18 @@ const Drafts = () => {
         {/* lineup */}
         <Stack
           w={{ base: '100%', md: '50%' }}
-          direction={'row'}
           pr={{ base: '0', md: '20' }}
           px={{ base: '8', md: '' }}
-          py={{ base: '0', md: '8' }}
-          justifyContent="space-between"
+          py={{ base: '0', md: '2' }}
+          spacing="4"
         >
-          {/* edit lineup */}
-          <Stack spacing={'4'} alignItems="center">
+          {/* header */}
+          <Stack
+            direction={'row'}
+            justifyContent="space-between"
+            spacing={'4'}
+            alignItems="center"
+          >
             <Heading
               minW={'fit-content'}
               fontSize={'lg'}
@@ -199,152 +217,299 @@ const Drafts = () => {
             >
               Edit Lineup
             </Heading>
-            {/* boxes */}
-            <Stack spacing={'3'}>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-              <Box
-                border={'2px solid rgba(255, 255, 255, 1)'}
-                _hover={{ cursor: 'pointer' }}
-                boxSize={{ base: '8', sm: '10', md: '14' }}
-                borderRadius={'lg'}
-                bg="rgba(217, 217, 217, 0.24);"
-              ></Box>
-            </Stack>
-          </Stack>
-          {/* balance */}
-          <Stack spacing={'4'} alignItems="center">
-            <Heading fontSize={'lg'} className="gradient-color">
+            <Heading
+              minW={'fit-content'}
+              fontSize={'lg'}
+              className="gradient-color"
+            >
               Balance
             </Heading>
+          </Stack>
+          <Stack className='faq' maxH={{base:'60vh',md:'85vh'}} overflow='auto' spacing="4">
             <Stack
-              pt={{ base: '2', sm: '4', md: '8' }}
-              spacing={{ base: '6', sm: '8', md: '12' }}
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
             >
               <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
+              <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
               <Box
                 borderRadius={'md'}
-                w="60px"
-                py={'0.5'}
+                w="68px"
+                py={'1.5'}
                 bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
               >
-                <Heading textAlign={'center'} fontSize={'xs'} color={'black'}>
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
+                  $1000
+                </Heading>
+              </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
+              <Box
+                borderRadius={'md'}
+                w="68px"
+                py={'1.5'}
+                bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
+              >
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
+                  $1000
+                </Heading>
+              </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
+              <Box
+                borderRadius={'md'}
+                w="68px"
+                py={'1.5'}
+                bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
+              >
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
+                  $1000
+                </Heading>
+              </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
+              <Box
+                borderRadius={'md'}
+                w="68px"
+                py={'1.5'}
+                bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
+              >
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
+                  $1000
+                </Heading>
+              </Box>
+            </Stack>
+            <Stack
+              direction={'row'}
+              justifyContent="space-between"
+              spacing={'4'}
+              alignItems="center"
+            >
+              <Box
+                border={'2px solid rgba(255, 255, 255, 1)'}
+                _hover={{ cursor: 'pointer' }}
+                boxSize={'24'}
+                borderRadius={'lg'}
+                bg="rgba(217, 217, 217, 0.24);"
+              ></Box>
+              <Box
+                borderRadius={'md'}
+                w="68px"
+                py={'1.5'}
+                bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}
+              >
+                <Heading textAlign={'center'} fontSize={'sm'} color={'black'}>
                   $1000
                 </Heading>
               </Box>
@@ -355,7 +520,7 @@ const Drafts = () => {
       {/* home button */}
       <Button
         _hover={{}}
-        onClick={() => nav('/')}
+        onClick={() => nav('/home')}
         display={{ base: 'inherit', md: 'none' }}
         size={'sm'}
         mt={'8 !important'}

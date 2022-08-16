@@ -41,7 +41,7 @@ const GameSchedule = () => {
             Game Schedule
           </Heading>
           <Image
-          onClick={()=>nav('/')}
+          onClick={()=>nav('/home')}
             display={{ base: 'inherit', md: 'none' }}
             _hover={{ cursor: 'pointer' }}
             w={{ base: '14', sm: '20', md: '28', lg: '40' }}
@@ -58,7 +58,7 @@ const GameSchedule = () => {
           >
             <Stack spacing={'3'}>
               <Button
-              onClick={()=>nav('/')}
+              onClick={()=>nav('/home')}
                 w={'36'}
                 color={'white'}
               _hover={{
@@ -84,7 +84,7 @@ const GameSchedule = () => {
                 variant={'link'}
               >
                 <Heading fontSize={'md'} fontWeight="700">
-                  MY Lineup
+                  My Lineup
                 </Heading>
               </Button>
               <Button
@@ -120,7 +120,7 @@ const GameSchedule = () => {
             </Stack>
             <VStack>
               <Image
-              onClick={()=>nav('/')}
+              onClick={()=>nav('/home')}
                 _hover={{ cursor: 'pointer' }}
                 w={{ base: '14', sm: '32', md: '32', lg: '24' }}
                 src={logo}
@@ -426,7 +426,7 @@ const GameSchedule = () => {
         </Stack>
         {/* Home Mibile Screen Button */}
         <Button
-        onClick={()=>nav('/')}
+        onClick={()=>nav('/home')}
           w={'40vw'}
           display={{ base: 'inherit', md: 'none' }}
           bgGradient="linear(180deg, #FCFF00 10%, #3FFF13 100%)"

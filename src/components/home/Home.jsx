@@ -16,16 +16,22 @@ import WalletConnect from '../walletConnect/WalletConnect';
 const Home = () => {
   const nav = useNavigate();
   return (
-    <Stack w={'full'}>
+    <Stack minH={'100vh !important'}>
       <Stack
-        h={{ base: '100vh', md: '75vh' }}
+        h={{ base: '76vh', md: '73vh' }}
+        maxH={{ base: '76vh', md: '73vh' }}
         w={'100%'}
         bgImage={BgImg}
         bgRepeat={'no-repeat'}
         bgSize={'cover'}
         bgPosition={'center'}
       >
-        <Stack alignItems={'center'} p={{ base: 4, md: 7 }} mb={{base:'8 !important',md:'0 !important'}} justifyContent='space-between' direction={'row'}>
+        <Stack
+          alignItems={'center'}
+          p={{ base: 4, md: 7 }}
+          justifyContent="space-between"
+          direction={'row'}
+        >
           <Heading
             _hover={{ cursor: 'pointer' }}
             id="button-text"
@@ -36,30 +42,31 @@ const Home = () => {
           <WalletConnect />
         </Stack>
         <Stack justifyContent="center" alignItems={'center'}>
-          <Stack textAlign={'center'} alignItems="center" mt={'-50px'}>
+          <Stack
+            textAlign={'center'}
+            spacing={{ base: '2' }}
+            alignItems="center"
+            mt={{ base: '-10px', sm: '-20px', md: '-60px' }}
+          >
             <Image
               _hover={{ cursor: 'pointer' }}
-              w={{ base: '20', md: '28', lg: '40' }}
+              w={{ base: '20', md: '28' }}
               src={logo}
             />
             <Stack>
-              <Heading
-                color={'white'}
-                fontSize={{ base: 'xl', md: '4xl', lg: '6xl' }}
-              >
-                The Future Of Defi Fantasy
+              <Heading color={'white'} fontSize={{ base: 'xl', md: '4xl' }}>
+                Fantasy Crypto Has Arrived
               </Heading>
             </Stack>
           </Stack>
           <Stack
+            justifyContent={'center'}
             direction={{ base: 'column', md: 'row' }}
-            spacing={{ base: '4', lg: '10' }}
-            w={'100%'}
-            px={'10%'}
-            pt={{base:'4',md:'6',lg:'10'}}
-            // pb={30}
+            spacing={{ base: '5', lg: '10' }}
+            w={{ base: '60%',sm:"80%" }}
+            pt={{ base: '4', md: '6', lg: '10' }}
           >
-            <Button
+            {/* <Button
               onClick={() => nav('/trending-coins')}
               className="button-border"
               color={'white'}
@@ -74,7 +81,7 @@ const Home = () => {
               <Heading fontSize={'md'} fontWeight="500">
                 Buy $YFIC
               </Heading>
-            </Button>
+            </Button> */}
             <Button
               onClick={() => nav('/menu')}
               w={{ base: '100%', md: '20%' }}
@@ -133,7 +140,7 @@ const Home = () => {
                 Socials
               </Heading>
             </Button>
-            <Button
+            {/* <Button
               onClick={() => nav('/nftmatchups')}
               className="button-border"
               color={'white'}
@@ -148,19 +155,21 @@ const Home = () => {
               <Heading fontSize={'md'} fontWeight="500">
                 NFT Matchups
               </Heading>
-            </Button>
+            </Button> */}
           </Stack>
         </Stack>
       </Stack>
       {/* footer */}
       <Stack
+        justifyContent={'center'}
+        h={{ base: '24vh', md: '27vh' }}
+        maxH={{ base: '24vh', md: '27vh' }}
         px="4"
         mt={'0 !important'}
-        py={{ base: '2', md: '5' }}
         w={'100%'}
         bg={'#000000'}
         alignItems="center"
-        spacing={'5'}
+        spacing={{base:"3",md:"5"}}
       >
         <Heading
           textAlign={'center'}

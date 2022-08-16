@@ -103,7 +103,7 @@ const TrendingCoins = () => {
               </Heading>
             </Button>
             <Button
-              onClick={() => nav('/login')}
+              onClick={() => nav('/')}
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -117,7 +117,7 @@ const TrendingCoins = () => {
               </Heading>
             </Button>
             <Button
-              onClick={() => nav('/login')}
+              onClick={() => nav('/')}
               className="button-border"
               color={'white'}
               _hover={{
