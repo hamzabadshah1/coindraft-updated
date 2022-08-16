@@ -82,7 +82,7 @@ const GameSchedule = () => {
                 variant={'link'}
               >
                 <Heading fontSize={'md'} fontWeight="700">
-                  MY Lineup
+                  My Lineup
                 </Heading>
               </Button>
               <Button
