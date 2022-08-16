@@ -15,7 +15,7 @@ const Drafts = () => {
   const nav = useNavigate();
   return (
     <Stack minH={'100vh'} w={'100%'} bg={'#050826'}>
-      <Stack direction={{ base: 'column', md: 'row' }} px={10}>
+      <Stack direction={{ base: 'column', md: 'row' }} px={4}>
         {/* home buttons */}
         <Stack
           w={{ base: '100%', md: '40%' }}
@@ -30,7 +30,7 @@ const Drafts = () => {
             px={10}
           >
             <Button
-              onClick={() => nav('/home')}
+              onClick={() => nav('/')}
               className="button-border"
               color={'white'}
               _hover={{
@@ -101,32 +101,49 @@ const Drafts = () => {
         {/* lineup */}
         <Stack w={{ base: '100%', md: '60%' }} py={{ base: '4', md: '8' }}>
           {/* edit lineup */}
-          <Stack spacing={'4'}>
+          <Stack spacing={'4'} justifyContent={'space-between'}>
+          <Stack
+              direction={{ base: 'row', md: 'column' }}
+              w={'full'}
+            
+              justify={{ base: 'space-between', md: 'inherit' }}
+            >
             <Heading
-              py={2}
-              alignItems={'center'}
-              minW={'fit-content'}
-              fontSize={{ base: 'xl', md: '3xl' }}
-              className="gradient-color"
+              fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
+              bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
+              bgClip="text"
             >
               Prize Payouts
             </Heading>
+            <Image
+              onClick={() => nav('/')}
+              display={{ base: 'inherit', md: 'none' }}
+              _hover={{ cursor: 'pointer' }}
+              w={{ base: '10', sm: '20', md: '28', lg: '40' }}
+              src={logo}
+            />
+            </Stack>
             {/* boxes */}
-            <Stack spacing={'3'} w={{ base: '100%', lg: '50%' }}>
+            <Stack
+              spacing={'3'}
+              w={{ base: '100%', lg: '50%' }}
+              justifyContent={'space-between'}
+            >
               <Stack
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
-                height={{ base: '370px', md: '360px' }}
-                p={{ base: 2, md: 5 }}
+                height={{ base: '380px', md: '400px' }}
+                p={{ base: 2, md: 4 }}
                 gap={2}
               >
                 <Stack
                   bgColor={' #FFFFFF'}
-                  boxShadow={'0px 4px 4px #3FFF13'}
+                  boxShadow={'0px 2px 2px #3FFF13'}
                   borderRadius={'14px'}
                   px={{ base: 2, md: 5 }}
+                  py={1}
                 >
                   <HStack justifyContent={'space-between'}>
                     <Text
@@ -161,9 +178,10 @@ const Drafts = () => {
 
                 <Stack
                   bgColor={' #FFFFFF'}
-                  boxShadow={'0px 4px 4px #3FFF13'}
+                  boxShadow={'0px 2px 2px #3FFF13'}
                   borderRadius={'14px'}
                   px={{ base: 2, md: 5 }}
+                  py={1}
                 >
                   <HStack justifyContent={'space-between'}>
                     <Text
@@ -198,9 +216,10 @@ const Drafts = () => {
 
                 <Stack
                   bgColor={' #FFFFFF'}
-                  boxShadow={'0px 4px 4px #3FFF13'}
+                  boxShadow={'0px 2px 2px #3FFF13'}
                   borderRadius={'14px'}
                   px={{ base: 2, md: 5 }}
+                  py={1}
                 >
                   <HStack justifyContent={'space-between'}>
                     <Text
@@ -235,9 +254,10 @@ const Drafts = () => {
 
                 <Stack
                   bgColor={' #FFFFFF'}
-                  boxShadow={'0px 4px 4px #3FFF13'}
+                  boxShadow={'0px 2px 2px #3FFF13'}
                   borderRadius={'14px'}
                   px={{ base: 2, md: 5 }}
+                  py={1}
                 >
                   <HStack justifyContent={'space-between'}>
                     <Text
@@ -272,9 +292,10 @@ const Drafts = () => {
 
                 <Stack
                   bgColor={' #FFFFFF'}
-                  boxShadow={'0px 4px 4px #3FFF13'}
+                  boxShadow={'0px 2px 2px #3FFF13'}
                   borderRadius={'14px'}
                   px={{ base: 2, md: 5 }}
+                  py={1}
                 >
                   <HStack justifyContent={'space-between'}>
                     <Text
@@ -307,12 +328,13 @@ const Drafts = () => {
                   </HStack>
                 </Stack>
               </Stack>
+
               <Stack
                 display={{ base: 'inherit', md: 'none', lg: 'none' }}
                 mt={5}
               >
                 <Button
-                  onClick={() => nav('/home')}
+                  onClick={() => nav('/')}
                   _hover={{}}
                   height={'45px'}
                   bg={'linear-gradient(90deg, #FCFF00 0%, #3FFF13 100%)'}

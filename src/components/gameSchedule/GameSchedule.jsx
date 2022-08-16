@@ -1,8 +1,6 @@
 import {
   Button,
-  Center,
   Heading,
-  HStack,
   Image,
   Stack,
   Tag,
@@ -14,16 +12,16 @@ import '../../App.css';
 import logo from '../../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
 const GameSchedule = () => {
-    const nav = useNavigate()
+  const nav = useNavigate();
   return (
     <>
       <Stack
         bg={'#050826'}
         minH={'100vh'}
-        px={{ base: '2', sm: '12' }}
-        py={'10'}
+        px={{ base: '4', sm: '12' }}
+        py={'4'}
         spacing={'6'}
-        justify={{ base: 'center' }}
+        justifyContent={{ base: 'space-between', md: 'center' }}
         align={'center'}
       >
         {/* Heading Container */}
@@ -41,10 +39,10 @@ const GameSchedule = () => {
             Game Schedule
           </Heading>
           <Image
-          onClick={()=>nav('/home')}
+            onClick={() => nav('/')}
             display={{ base: 'inherit', md: 'none' }}
             _hover={{ cursor: 'pointer' }}
-            w={{ base: '14', sm: '20', md: '28', lg: '40' }}
+            w={{ base: '10', sm: '20', md: '28', lg: '40' }}
             src={logo}
           />
         </Stack>
@@ -58,13 +56,13 @@ const GameSchedule = () => {
           >
             <Stack spacing={'3'}>
               <Button
-              onClick={()=>nav('/home')}
+                onClick={() => nav('/')}
                 w={'36'}
                 color={'white'}
-              _hover={{
-                bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
-                color: '#1A202C',
-              }}
+                _hover={{
+                  bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
+                  color: '#1A202C',
+                }}
                 className="button-border"
                 variant={'link'}
               >
@@ -73,28 +71,28 @@ const GameSchedule = () => {
                 </Heading>
               </Button>
               <Button
-              onClick={()=>nav('/drafts')}
+                onClick={() => nav('/drafts')}
                 w={'36'}
                 color={'white'}
-              _hover={{
-                bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
-                color: '#1A202C',
-              }}
+                _hover={{
+                  bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
+                  color: '#1A202C',
+                }}
                 className="button-border"
                 variant={'link'}
               >
                 <Heading fontSize={'md'} fontWeight="700">
-                  My Lineup
+                  MY Lineup
                 </Heading>
               </Button>
               <Button
-              onClick={()=>nav('/leaderboard')}
+                onClick={() => nav('/leaderboard')}
                 w={'36'}
                 color={'white'}
-              _hover={{
-                bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
-                color: '#1A202C',
-              }}
+                _hover={{
+                  bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
+                  color: '#1A202C',
+                }}
                 className="button-border"
                 variant={'link'}
               >
@@ -103,13 +101,13 @@ const GameSchedule = () => {
                 </Heading>
               </Button>
               <Button
-              onClick={()=>nav('/prize-payouts')}
+                onClick={() => nav('/prize-payouts')}
                 w={'36'}
                 color={'white'}
-              _hover={{
-                bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
-                color: '#1A202C',
-              }}
+                _hover={{
+                  bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
+                  color: '#1A202C',
+                }}
                 className="button-border"
                 variant={'link'}
               >
@@ -120,7 +118,7 @@ const GameSchedule = () => {
             </Stack>
             <VStack>
               <Image
-              onClick={()=>nav('/home')}
+                onClick={() => nav('/')}
                 _hover={{ cursor: 'pointer' }}
                 w={{ base: '14', sm: '32', md: '32', lg: '24' }}
                 src={logo}
@@ -164,7 +162,7 @@ const GameSchedule = () => {
               >
                 <Tag
                   fontWeight={'bold'}
-                  fontSize={'xs'}
+                  fontSize={{ base: 'sm', md: 'md' }}
                   bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
                   bgClip="text"
                   minH={'0.6em'}
@@ -174,11 +172,14 @@ const GameSchedule = () => {
               </Stack>
               <Text
                 textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
+                fontSize={{ base: 'sm', md: 'md' }}
+                pt={6}
+                pb={2}
+                fontWeight={'700'}
               >
                 Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
+                Tracked.
+                <br /> Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
                 Coins Will Be Listed To Draft Your Lineup.
               </Text>
             </Stack>
@@ -203,7 +204,7 @@ const GameSchedule = () => {
               >
                 <Tag
                   fontWeight={'bold'}
-                  fontSize={'xs'}
+                  fontSize={{ base: 'sm', md: 'md' }}
                   bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
                   bgClip="text"
                   minH={'0.6em'}
@@ -213,12 +214,13 @@ const GameSchedule = () => {
               </Stack>
               <Text
                 textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
+                fontSize={{ base: 'sm', md: 'md' }}
+                pt={6}
+                pb={2}
+                fontWeight={'700'}
               >
-                Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
-                Coins Will Be Listed To Draft Your Lineup.
+                Throughtout Sunday, The Top 100 Crypto Coins Will Be Listed To
+                Draft Your Lineup.
               </Text>
             </Stack>
 
@@ -242,7 +244,7 @@ const GameSchedule = () => {
               >
                 <Tag
                   fontWeight={'bold'}
-                  fontSize={'xs'}
+                  fontSize={{ base: 'sm', md: 'md' }}
                   bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
                   bgClip="text"
                   minH={'0.6em'}
@@ -252,12 +254,14 @@ const GameSchedule = () => {
               </Stack>
               <Text
                 textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
+                fontSize={{ base: 'sm', md: 'md' }}
+                pt={6}
+                pb={2}
+                fontWeight={'700'}
               >
-                Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
-                Coins Will Be Listed To Draft Your Lineup.
+                12pm UTC: Scoring Is Now Being Tracked. <br />
+                Draft The Lineup With The Highest Returns Compared To Fellow
+                Competitors And The Prize Is Yours!
               </Text>
             </Stack>
 
@@ -281,7 +285,7 @@ const GameSchedule = () => {
               >
                 <Tag
                   fontWeight={'bold'}
-                  fontSize={'xs'}
+                  fontSize={{ base: 'sm', md: 'md' }}
                   bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
                   bgClip="text"
                   minH={'0.6em'}
@@ -291,12 +295,12 @@ const GameSchedule = () => {
               </Stack>
               <Text
                 textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
+                fontSize={{ base: 'sm', md: 'md' }}
+                pt={6}
+                pb={2}
+                fontWeight={'700'}
               >
-                Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
-                Coins Will Be Listed To Draft Your Lineup.
+                11:59pm UTC Deadline To Add Yfic To Your Calculated Winnings.
               </Text>
             </Stack>
 
@@ -320,100 +324,23 @@ const GameSchedule = () => {
               >
                 <Tag
                   fontWeight={'bold'}
-                  fontSize={'xs'}
+                  fontSize={{ base: 'sm', md: 'md' }}
                   bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
                   bgClip="text"
                   minH={'0.6em'}
                 >
-                  Wednesday
+                  Wednesday - Friday
                 </Tag>
               </Stack>
               <Text
                 textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
+                fontSize={{ base: 'sm', md: 'md' }}
+                pt={6}
+                pb={2}
+                fontWeight={'700'}
               >
-                Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
-                Coins Will Be Listed To Draft Your Lineup.
-              </Text>
-            </Stack>
-
-            <Stack
-              direction={'row'}
-              color={'black'}
-              className="button-border"
-              p={'0 !important'}
-              bgColor={'white'}
-              borderRadius={'lg'}
-              justify={'center'}
-              position={'relative'}
-            >
-              <Stack
-                bgColor={'#050826'}
-                borderRadius={'full'}
-                px={'4'}
-                py={'1'}
-                position={'absolute'}
-                top={'-4'}
-              >
-                <Tag
-                  fontWeight={'bold'}
-                  fontSize={'xs'}
-                  bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
-                  bgClip="text"
-                  minH={'0.6em'}
-                >
-                  Thursday
-                </Tag>
-              </Stack>
-              <Text
-                textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
-              >
-                Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
-                Coins Will Be Listed To Draft Your Lineup.
-              </Text>
-            </Stack>
-
-            <Stack
-              direction={'row'}
-              color={'black'}
-              className="button-border"
-              p={'0 !important'}
-              bgColor={'white'}
-              borderRadius={'lg'}
-              justify={'center'}
-              position={'relative'}
-            >
-              <Stack
-                bgColor={'#050826'}
-                borderRadius={'full'}
-                px={'4'}
-                py={'1'}
-                position={'absolute'}
-                top={'-4'}
-              >
-                <Tag
-                  fontWeight={'bold'}
-                  fontSize={'xs'}
-                  bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
-                  bgClip="text"
-                  minH={'0.6em'}
-                >
-                  Friday
-                </Tag>
-              </Stack>
-              <Text
-                textAlign={'center'}
-                fontSize={{ base: 'xs', md: 'sm' }}
-                pt={'2'}
-              >
-                Saturday - 12:00 pm UTC Each Week Scoring Will Stop Being
-                Tracked. Saturday - 12:01pm UTC Each Week, The Top 100 Crypto
-                Coins Will Be Listed To Draft Your Lineup.
+                Throughout The Rest Of The Week, Check The Leaderboard To See
+                How Your Lineup Is Doing!
               </Text>
             </Stack>
           </Stack>
@@ -426,7 +353,7 @@ const GameSchedule = () => {
         </Stack>
         {/* Home Mibile Screen Button */}
         <Button
-        onClick={()=>nav('/home')}
+          onClick={() => nav('/')}
           w={'40vw'}
           display={{ base: 'inherit', md: 'none' }}
           bgGradient="linear(180deg, #FCFF00 10%, #3FFF13 100%)"
