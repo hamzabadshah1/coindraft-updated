@@ -45,7 +45,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 My Profile
               </Heading>
             </Button>
@@ -59,7 +59,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Leaderboard
               </Heading>
             </Button>
@@ -73,7 +73,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Prizes
               </Heading>
             </Button>
@@ -86,7 +86,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Game Schedule
               </Heading>
             </Button>
@@ -99,7 +99,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Settings
               </Heading>
             </Button>
@@ -113,7 +113,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Logout
               </Heading>
             </Button>
@@ -127,7 +127,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Home
               </Heading>
             </Button>
@@ -235,7 +235,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -259,7 +259,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -283,7 +283,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -307,7 +307,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -331,7 +331,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -355,7 +355,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -379,7 +379,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -403,7 +403,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -427,7 +427,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -451,7 +451,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -475,7 +475,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>
@@ -499,7 +499,7 @@ const Drafts = () => {
               <Box
                 border={'2px solid rgba(255, 255, 255, 1)'}
                 _hover={{ cursor: 'pointer' }}
-                boxSize={'20'}
+                boxSize={'24'}
                 borderRadius={'lg'}
                 bg="rgba(217, 217, 217, 0.24);"
               ></Box>

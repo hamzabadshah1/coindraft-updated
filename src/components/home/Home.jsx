@@ -42,10 +42,10 @@ const Home = () => {
           </Heading>
           <WalletConnect />
         </Stack>
-        <Stack justifyContent="center" alignItems={'center'}>
+        <Stack spacing={'6'} justifyContent="center" alignItems={'center'}>
           <Stack
             textAlign={'center'}
-            spacing={{ base: '2' }}
+            spacing={{ base: '8' }}
             alignItems="center"
             mt={{ base: '-10px', sm: '-20px', md: '-60px' }}
           >
@@ -64,7 +64,7 @@ const Home = () => {
             justifyContent={'center'}
             direction={{ base: 'column', md: 'row' }}
             spacing={{ base: '5', lg: '10' }}
-            w={{ base: '60%',sm:"80%" }}
+            w={{ base: '60%',sm:"70%" }}
             pt={{ base: '4', md: '6', lg: '10' }}
           >
             {/* <Button

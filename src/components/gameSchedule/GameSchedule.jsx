@@ -32,7 +32,7 @@ const GameSchedule = () => {
           justify={{ base: 'space-between', md: 'inherit' }}
         >
           <Heading
-          className='heading'
+            className="heading"
             fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
@@ -48,14 +48,21 @@ const GameSchedule = () => {
           />
         </Stack>
         {/* Content Container */}
-        <Stack direction={'row'} h={{ base: '60vh', lg: '55vh' }}>
+        <Stack
+          direction={'row'}
+          w={'90%'}
+          maxH={{ base: '60vh', lg: '65vh' }}
+          overflow="auto"
+          className="faq"
+          spacing={'10 !important'}
+        >
           {/* Sidebar Button Container */}
           <Stack
+          spacing={'8'}
             display={{ base: 'none', md: 'inherit' }}
             align={'center'}
-            justify={'space-between'}
           >
-            <Stack spacing={'3'}>
+            <Stack spacing={'5'}>
               <Button
                 onClick={() => nav('/')}
                 w={'36'}
@@ -345,12 +352,6 @@ const GameSchedule = () => {
               </Text>
             </Stack>
           </Stack>
-          {/* Additional Stack */}
-          <Stack
-            w={'36'}
-            display={{ base: 'none', md: 'inherit' }}
-            align={'center'}
-          ></Stack>
         </Stack>
         {/* Home Mibile Screen Button */}
         <Button
