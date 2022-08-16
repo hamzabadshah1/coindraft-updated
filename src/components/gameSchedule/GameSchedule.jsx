@@ -50,11 +50,11 @@ const GameSchedule = () => {
         {/* Content Container */}
         <Stack
           direction={'row'}
-          w={'90%'}
-          maxH={{ base: '60vh', lg: '65vh' }}
+          w={{base:'100%'}}
+          maxH={{ base: '60vh',md:"80vh", lg: '65vh' }}
           overflow="auto"
           className="faq"
-          spacing={'10 !important'}
+          spacing={{base:'0',md:'10 !important'}}
         >
           {/* Sidebar Button Container */}
           <Stack

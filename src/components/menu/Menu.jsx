@@ -72,7 +72,7 @@ const Menu = () => {
             <Spacer />
             <Stack>
               <Text fontSize={{base:'sm',md:'md'}} color={'white'} fontWeight={'700'}>
-                Coming On!
+                Coming Soon!
               </Text>
             </Stack>
           </HStack>
