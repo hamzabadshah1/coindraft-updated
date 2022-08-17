@@ -15,7 +15,7 @@ import {
 import React from 'react';
 import plus from '../../assets/images/plus.png';
 import minus from '../../assets/images/minus.png';
-import '../../components/drafts/Drafts.css'
+import '../../components/drafts/Drafts.css';
 import { useNavigate } from 'react-router';
 const Learn = () => {
   const nav = useNavigate();
@@ -52,11 +52,7 @@ const Learn = () => {
           <Stack alignItems={'center'}>
             <Text
               fontSize={{ base: 'lg', md: '3xl' }}
-<<<<<<< HEAD
               className="faq-text font-style"
-=======
-              className="faq-text heading"
->>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
               textAlign={'center'}
             >
               Our FAQ’s

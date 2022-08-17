@@ -1,19 +1,19 @@
-import {
-  Button,
-  Heading,
-  Image,
-  Input,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
+import { Button, Heading, Image, Input, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-import '../../components/drafts/Drafts.css'
+import '../../components/drafts/Drafts.css';
 const MyProfile = () => {
   const nav = useNavigate();
   return (
-    <Stack minH={'100vh'} spacing={{base:'0',md:'12'}} py={{ base: '2',sm:"2", md: '2' }} justifyContent={{base:'space-between',md:'initial'}} w={'100%'} bg={'#050826'}>
+    <Stack
+      minH={'100vh'}
+      spacing={{ base: '0', md: '12' }}
+      py={{ base: '2', sm: '2', md: '2' }}
+      justifyContent={{ base: 'space-between', md: 'initial' }}
+      w={'100%'}
+      bg={'#050826'}
+    >
       {/* mobile header */}
       <Stack
         alignItems={'center'}
@@ -23,11 +23,7 @@ const MyProfile = () => {
         direction={'row'}
         justifyContent="space-between"
       >
-<<<<<<< HEAD
         <Text fontSize={'xl'} className="gradient-color font-style">
-=======
-        <Heading fontSize={'xl'} className="gradient-color heading">
->>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
           My Profile
         </Text>
         <Image
@@ -58,7 +54,7 @@ const MyProfile = () => {
             <Button
               onClick={() => nav('/')}
               className="button-border"
-              height='40px'
+              height="40px"
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -71,9 +67,9 @@ const MyProfile = () => {
               </Heading>
             </Button>
             <Button
-            onClick={() => nav('/drafts')}
+              onClick={() => nav('/drafts')}
               className="button-border"
-              height='40px'
+              height="40px"
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -86,9 +82,9 @@ const MyProfile = () => {
               </Heading>
             </Button>
             <Button
-            onClick={() => nav('/leaderboard')}
+              onClick={() => nav('/leaderboard')}
               className="button-border"
-              height='40px'
+              height="40px"
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -101,9 +97,9 @@ const MyProfile = () => {
               </Heading>
             </Button>
             <Button
-            onClick={() => nav('/prize-payouts')}
+              onClick={() => nav('/prize-payouts')}
               className="button-border"
-              height='40px'
+              height="40px"
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -116,9 +112,9 @@ const MyProfile = () => {
               </Heading>
             </Button>
             <Button
-            onClick={() => nav('/gameschedule')}
+              onClick={() => nav('/gameschedule')}
               className="button-border"
-              height='40px'
+              height="40px"
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -164,7 +160,7 @@ const MyProfile = () => {
             {/* change team */}
             <Stack spacing={{ base: '2', md: '4', lg: '6' }} direction={'row'}>
               <Button
-                minW={{ base: '43%',lg:'30%' }}
+                minW={{ base: '43%', lg: '30%' }}
                 rounded={'lg'}
                 _hover={{}}
                 bg={' linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)'}
@@ -187,7 +183,7 @@ const MyProfile = () => {
             {/* change username */}
             <Stack spacing={{ base: '2', md: '4', lg: '6' }} direction={'row'}>
               <Button
-                minW={{ base: '43%',lg:'30%' }}
+                minW={{ base: '43%', lg: '30%' }}
                 rounded={'lg'}
                 _hover={{}}
                 bg={' linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)'}
@@ -214,7 +210,7 @@ const MyProfile = () => {
             {/* change email */}
             <Stack spacing={{ base: '2', md: '4', lg: '6' }} direction={'row'}>
               <Button
-                minW={{ base: '43%',lg:'30%' }}
+                minW={{ base: '43%', lg: '30%' }}
                 rounded={'lg'}
                 _hover={{}}
                 bg={' linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)'}
@@ -241,7 +237,7 @@ const MyProfile = () => {
             {/* Change YFIC Address */}
             <Stack spacing={{ base: '2', md: '4', lg: '6' }} direction={'row'}>
               <Button
-                minW={{ base: '43%',lg:'30%' }}
+                minW={{ base: '43%', lg: '30%' }}
                 rounded={'lg'}
                 _hover={{}}
                 bg={' linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)'}
@@ -268,7 +264,7 @@ const MyProfile = () => {
             {/* Change Password */}
             <Stack spacing={{ base: '2', md: '4', lg: '6' }} direction={'row'}>
               <Button
-                minW={{ base: '43%',lg:'30%' }}
+                minW={{ base: '43%', lg: '30%' }}
                 rounded={'lg'}
                 _hover={{}}
                 bg={' linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)'}
@@ -296,7 +292,7 @@ const MyProfile = () => {
             {/* Change Avatar */}
             <Stack spacing={{ base: '2', md: '4', lg: '6' }} direction={'row'}>
               <Button
-                minW={{ base: '43%',lg:'30%' }}
+                minW={{ base: '43%', lg: '30%' }}
                 rounded={'lg'}
                 _hover={{}}
                 bg={' linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)'}

@@ -11,20 +11,26 @@ import {
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-import '../../components/drafts/Drafts.css'
+import '../../components/drafts/Drafts.css';
 const Drafts = () => {
   const nav = useNavigate();
   return (
-    <Stack spacing={{base:'6',md:'12'}} py={{base:'6',md:'12'}} minH={'100vh'} w={'100%'} bg={'#050826'}>
+    <Stack
+      spacing={{ base: '6', md: '12' }}
+      py={{ base: '6', md: '12' }}
+      minH={'100vh'}
+      w={'100%'}
+      bg={'#050826'}
+    >
       {/* header */}
       <Stack
-      px={'4'}
+        px={'4'}
         direction={{ base: 'row', md: 'column' }}
         w={'full'}
         justify={{ base: 'space-between', md: 'inherit' }}
       >
         <Heading
-        textAlign={'center'}
+          textAlign={'center'}
           className="heading"
           fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
           bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
@@ -126,31 +132,28 @@ const Drafts = () => {
         <Stack w={{ base: '100%', md: '60%' }}>
           {/* edit lineup */}
           <Stack spacing={'4'} justifyContent={'space-between'}>
-<<<<<<< HEAD
-          <Stack
+            <Stack
               direction={{ base: 'row', md: 'column' }}
               w={'full'}
-            
               justify={{ base: 'space-between', md: 'inherit' }}
             >
-            <Text
-              fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
-              bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
-              bgClip="text"
-              className='font-style'
-            >
-              Prize Payouts
-            </Text>
-            <Image
-              onClick={() => nav('/')}
-              display={{ base: 'inherit', md: 'none' }}
-              _hover={{ cursor: 'pointer' }}
-              w={{ base: '10', sm: '20', md: '28', lg: '40' }}
-              src={logo}
-            />
+              <Text
+                fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
+                bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
+                bgClip="text"
+                className="font-style"
+              >
+                Prize Payouts
+              </Text>
+              <Image
+                onClick={() => nav('/')}
+                display={{ base: 'inherit', md: 'none' }}
+                _hover={{ cursor: 'pointer' }}
+                w={{ base: '10', sm: '20', md: '28', lg: '40' }}
+                src={logo}
+              />
             </Stack>
-=======
->>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
+
             {/* boxes */}
             <Stack
               spacing={'3'}

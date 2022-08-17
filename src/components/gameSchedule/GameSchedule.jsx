@@ -11,7 +11,7 @@ import React from 'react';
 import '../../App.css';
 import logo from '../../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
-import '../../components/drafts/Drafts.css'
+import '../../components/drafts/Drafts.css';
 const GameSchedule = () => {
   const nav = useNavigate();
   return (
@@ -32,17 +32,11 @@ const GameSchedule = () => {
           align={{ base: 'center' }}
           justify={{ base: 'space-between', md: 'inherit' }}
         >
-<<<<<<< HEAD
           <Text
             fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
-=======
-          <Heading
-            className="heading"
-            fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
->>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
-            className='font-style'
+            className="font-style"
           >
             Game Schedule
           </Text>
@@ -57,15 +51,15 @@ const GameSchedule = () => {
         {/* Content Container */}
         <Stack
           direction={'row'}
-          w={{base:'100%'}}
-          maxH={{ base: '60vh',md:"80vh", lg: '65vh' }}
+          w={{ base: '100%' }}
+          maxH={{ base: '60vh', md: '80vh', lg: '65vh' }}
           overflow="auto"
           className="faq"
-          spacing={{base:'0',md:'10 !important'}}
+          spacing={{ base: '0', md: '10 !important' }}
         >
           {/* Sidebar Button Container */}
           <Stack
-          spacing={'8'}
+            spacing={'8'}
             display={{ base: 'none', md: 'inherit' }}
             align={'center'}
           >

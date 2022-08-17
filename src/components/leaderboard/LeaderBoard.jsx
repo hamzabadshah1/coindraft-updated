@@ -12,7 +12,7 @@ import React from 'react';
 import logo from '../../assets/images/logo.png';
 import down from '../../assets/images/down.svg';
 import '../../App.css';
-import '../../components/drafts/Drafts.css'
+import '../../components/drafts/Drafts.css';
 import LeaderboardTable from './LeaderboardTable';
 import { useNavigate } from 'react-router-dom';
 
@@ -23,9 +23,9 @@ const LeaderBoard = () => {
       <Stack
         bg={'#050826'}
         minH={'100vh'}
-        justifyContent={{base:'space-between',md:'initial'}}
+        justifyContent={{ base: 'space-between', md: 'initial' }}
         px={{ base: '3', sm: '12' }}
-        py={{base:'4',md:'10'}}
+        py={{ base: '4', md: '10' }}
         spacing={'6'}
       >
         {/* Leaderboard heading Logo and Button */}
@@ -98,17 +98,12 @@ const LeaderBoard = () => {
             direction={{ base: 'row', md: 'column' }}
             justify={{ base: 'space-between', md: 'inherit' }}
           >
-<<<<<<< HEAD
             <Text
-=======
-            <Heading
-          className='heading'
->>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
               as={'h1'}
               fontSize={{ base: '2xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
               bgClip="text"
-              className='font-style'
+              className="font-style"
             >
               Leaderboard
             </Text>
@@ -200,7 +195,7 @@ const LeaderBoard = () => {
         </Stack>
         {/* Home Mibile Screen Button */}
         <Button
-        alignSelf={'center'}
+          alignSelf={'center'}
           onClick={() => nav('/home')}
           w={'40vw'}
           display={{ base: 'inherit', md: 'none' }}
