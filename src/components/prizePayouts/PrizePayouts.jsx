@@ -29,15 +29,16 @@ const Drafts = () => {
         w={'full'}
         justify={{ base: 'space-between', md: 'inherit' }}
       >
-        <Heading
+        <Text
           textAlign={'center'}
-          className="heading"
+          className="font-style"
           fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
           bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
           bgClip="text"
+
         >
           Prize Payouts
-        </Heading>
+        </Text>
         <Image
           onClick={() => nav('/')}
           display={{ base: 'inherit', md: 'none' }}
@@ -132,27 +133,7 @@ const Drafts = () => {
         <Stack w={{ base: '100%', md: '60%' }}>
           {/* edit lineup */}
           <Stack spacing={'4'} justifyContent={'space-between'}>
-            <Stack
-              direction={{ base: 'row', md: 'column' }}
-              w={'full'}
-              justify={{ base: 'space-between', md: 'inherit' }}
-            >
-              <Text
-                fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
-                bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
-                bgClip="text"
-                className="font-style"
-              >
-                Prize Payouts
-              </Text>
-              <Image
-                onClick={() => nav('/')}
-                display={{ base: 'inherit', md: 'none' }}
-                _hover={{ cursor: 'pointer' }}
-                w={{ base: '10', sm: '20', md: '28', lg: '40' }}
-                src={logo}
-              />
-            </Stack>
+           
 
             {/* boxes */}
             <Stack

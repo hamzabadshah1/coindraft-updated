@@ -22,6 +22,7 @@ import icon8 from '../../assets/images/icon7.png';
 import icon9 from '../../assets/images/icon7.png';
 import icon10 from '../../assets/images/icon5-1.png';
 import BgImg from '../../assets/images/BgImg.png';
+import '../../components/drafts/Drafts.css';
 import '../../App.css';
 import { useNavigate } from 'react-router-dom';
 import WalletConnect from '../walletConnect/WalletConnect';
@@ -47,14 +48,14 @@ const Home = () => {
           justifyContent="space-between"
           direction={'row'}
         >
-          <Heading
-          className='heading'
+          <Text
+          className='font-style'
             _hover={{ cursor: 'pointer' }}
             id="button-text"
             fontSize={'2xl'}
           >
             CoinDraft
-          </Heading>
+          </Text>
           <WalletConnect />
         </Stack>
         <Stack spacing={'6'} justifyContent="center" alignItems={'center'}>

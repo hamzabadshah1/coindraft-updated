@@ -33,14 +33,15 @@ const MyProfile = () => {
           onClick={() => nav('/home')}
         />
       </Stack>
-      <Heading
+      <Text
         display={{ base: 'none', md: 'flex' }}
         alignSelf="center"
         textAlign={'center !important'}
-        className="gradient-color"
+        className="gradient-color font-style"
+        fontSize={{ base: '3xl', md: '4xl' }}
       >
         My Profile
-      </Heading>
+      </Text>
       <Stack
         spacing={{ base: '0', md: '3' }}
         px={{ base: '1', sm: '2', md: '0' }}
