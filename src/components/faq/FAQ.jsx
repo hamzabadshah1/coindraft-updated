@@ -15,6 +15,7 @@ import {
 import React from 'react';
 import plus from '../../assets/images/plus.png';
 import minus from '../../assets/images/minus.png';
+import '../../components/drafts/Drafts.css'
 import { useNavigate } from 'react-router';
 const Learn = () => {
   const nav = useNavigate();
@@ -49,13 +50,13 @@ const Learn = () => {
       >
         <Stack pl={{ base: '0', sm: '2', md: '8' }} w={'100%'}>
           <Stack alignItems={'center'}>
-            <Heading
+            <Text
               fontSize={{ base: 'lg', md: '3xl' }}
-              className="faq-text"
+              className="faq-text font-style"
               textAlign={'center'}
             >
               Our FAQ’s
-            </Heading>
+            </Text>
           </Stack>
           <Accordion
             overflow="auto"

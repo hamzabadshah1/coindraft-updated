@@ -22,6 +22,8 @@ import icon8 from '../../assets/images/icon7.png';
 import icon9 from '../../assets/images/icon7.png';
 import icon10 from '../../assets/images/icon5-1.png';
 import { useNavigate } from 'react-router-dom';
+import '../../components/drafts/Drafts.css'
+
 const Menu = () => {
   const nav = useNavigate();
   return (
@@ -40,14 +42,14 @@ const Menu = () => {
         pt={{base:'5',md:'2'}}
       >
         <HStack>
-          <Heading
+          <Text
             alignItems={'center'}
             minW={'fit-content'}
-            fontSize={{ base: 'xl', md: '4xl' }}
-            className="gradient-color"
+            fontSize={{ base: '3xl', md: '4xl' }}
+            className="gradient-color font-style"
           >
             Menu
-          </Heading>
+          </Text>
           <Spacer />
           <Stack>
             <Image

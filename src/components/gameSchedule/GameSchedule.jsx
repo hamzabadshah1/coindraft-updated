@@ -11,6 +11,7 @@ import React from 'react';
 import '../../App.css';
 import logo from '../../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
+import '../../components/drafts/Drafts.css'
 const GameSchedule = () => {
   const nav = useNavigate();
   return (
@@ -31,13 +32,14 @@ const GameSchedule = () => {
           align={{ base: 'center' }}
           justify={{ base: 'space-between', md: 'inherit' }}
         >
-          <Heading
-            fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
+          <Text
+            fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
+            className='font-style'
           >
             Game Schedule
-          </Heading>
+          </Text>
           <Image
             onClick={() => nav('/')}
             display={{ base: 'inherit', md: 'none' }}

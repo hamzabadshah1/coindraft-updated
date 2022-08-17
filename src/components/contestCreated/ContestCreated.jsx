@@ -6,6 +6,7 @@ import link1 from '../../assets/images/1.png';
 import link2 from '../../assets/images/2.png';
 import link3 from '../../assets/images/3.png';
 import link4 from '../../assets/images/4.png';
+import '../../components/drafts/Drafts.css';
 
 const ContestCreated = () => {
   return (
@@ -33,7 +34,14 @@ const ContestCreated = () => {
               src={logo}
             />
           </Stack>
-          <Heading fontSize={'2xl'} textAlign={'center'} id="button-text">Contest Created!</Heading>
+          <Text
+            fontSize={'3xl'}
+            textAlign={'center'}
+            className="font-style"
+            id="button-text"
+          >
+            Contest Created!
+          </Text>
         </Stack>
         {/* Success Image */}
         <Image
@@ -84,7 +92,7 @@ const ContestCreated = () => {
           </Stack>
           {/* Done Button */}
           <Button
-          size={'sm'}
+            size={'sm'}
             _hover={{}}
             _active={{}}
             _focus={{}}

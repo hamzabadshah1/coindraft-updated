@@ -11,6 +11,7 @@ import {
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+import '../../components/drafts/Drafts.css'
 const Drafts = () => {
   const nav = useNavigate();
   return (
@@ -108,13 +109,14 @@ const Drafts = () => {
             
               justify={{ base: 'space-between', md: 'inherit' }}
             >
-            <Heading
-              fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
+            <Text
+              fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
               bgClip="text"
+              className='font-style'
             >
               Prize Payouts
-            </Heading>
+            </Text>
             <Image
               onClick={() => nav('/')}
               display={{ base: 'inherit', md: 'none' }}

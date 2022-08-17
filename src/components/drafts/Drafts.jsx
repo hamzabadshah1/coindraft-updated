@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png';
 const Drafts = () => {
   const nav = useNavigate();
   return (
-    <Stack py='4' w={'100%'} bg={'#050826'}>
+    <Stack py="4" w={'100%'} bg={'#050826'}>
       {/* mobile header */}
       <Stack
         alignItems={'center'}
@@ -16,7 +16,12 @@ const Drafts = () => {
         direction={'row'}
         justifyContent="space-between"
       >
-        <Heading className="gradient-color">Draft</Heading>
+        <Text
+          className="gradient-color font-style"
+          fontSize={{ base: '3xl', md: '4xl' }}
+        >
+          Draft
+        </Text>
         <Image
           _hover={{ cursor: 'pointer' }}
           w={{ base: '9', sm: '12' }}
@@ -225,7 +230,12 @@ const Drafts = () => {
               Balance
             </Heading>
           </Stack>
-          <Stack className='faq' maxH={{base:'60vh',md:'85vh'}} overflow='auto' spacing="4">
+          <Stack
+            className="faq"
+            maxH={{ base: '60vh', md: '85vh' }}
+            overflow="auto"
+            spacing="4"
+          >
             <Stack
               direction={'row'}
               justifyContent="space-between"

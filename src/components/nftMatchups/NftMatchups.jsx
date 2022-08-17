@@ -27,6 +27,7 @@ import Btn3img1 from '../../assets/images/azuki.png';
 import Btn3img2 from '../../assets/images/moonbirds.png';
 import win from '../../assets/images/win.png';
 import { useNavigate } from 'react-router-dom';
+import '../../components/drafts/Drafts.css'
 import '../../App.css';
 
 const NftMatchups = () => {
@@ -43,13 +44,14 @@ const NftMatchups = () => {
     >
       <Stack w={{ base: '100%', md: '90%', lg: '70%', xl: '50%' }}>
         <Stack pt={5}>
-          <Heading
-            fontSize={{ base: '3xl', sm: '5xl', md: '5xl' }}
+          <Text
+            fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
+            className='font-style'
           >
             NFT MATCHUPS
-          </Heading>
+          </Text>
           <Text color={'white'} fontWeight={'bold'}>
             PICK THE WINNER & ASSIGN A CONFIDENCE RANK TO EACH PICK
           </Text>

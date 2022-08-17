@@ -9,6 +9,7 @@ import {
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+import '../../components/drafts/Drafts.css'
 const MyProfile = () => {
   const nav = useNavigate();
   return (
@@ -22,9 +23,9 @@ const MyProfile = () => {
         direction={'row'}
         justifyContent="space-between"
       >
-        <Heading fontSize={'xl'} className="gradient-color">
+        <Text fontSize={'xl'} className="gradient-color font-style">
           My Profile
-        </Heading>
+        </Text>
         <Image
           _hover={{ cursor: 'pointer' }}
           w={{ base: '9', sm: '12' }}

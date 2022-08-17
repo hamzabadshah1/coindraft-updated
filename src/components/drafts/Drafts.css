@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'zing_rust_demobase';
+  src: url('../../font/zing.rust-demo-base-webfont.woff2') format('woff2'),
+       url('../../font/zing.rust-demo-base-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-style{
+  font-family: 'zing_rust_demobase';
+  font-weight: 700;
+}
+
 /* button  border gradient with border radius */
 .button-border {
   position: relative;

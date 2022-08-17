@@ -12,6 +12,7 @@ import React from 'react';
 import logo from '../../assets/images/logo.png';
 import down from '../../assets/images/down.svg';
 import '../../App.css';
+import '../../components/drafts/Drafts.css'
 import LeaderboardTable from './LeaderboardTable';
 import { useNavigate } from 'react-router-dom';
 
@@ -97,14 +98,15 @@ const LeaderBoard = () => {
             direction={{ base: 'row', md: 'column' }}
             justify={{ base: 'space-between', md: 'inherit' }}
           >
-            <Heading
+            <Text
               as={'h1'}
               fontSize={{ base: '2xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
               bgClip="text"
+              className='font-style'
             >
               Leaderboard
-            </Heading>
+            </Text>
             <Image
               onClick={() => nav('/home')}
               _hover={{ cursor: 'pointer' }}

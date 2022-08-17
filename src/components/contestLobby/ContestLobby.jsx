@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import '../../App.css';
+import '../../components/drafts/Drafts.css'
 import logo from '../../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
 import { unhover } from '@testing-library/user-event/dist/hover';
@@ -36,13 +37,14 @@ const ContestLobby = () => {
           align={{ base: 'center' }}
           justify={{ base: 'space-between', md: 'inherit' }}
         >
-          <Heading
+          <Text
             fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
+            className='font-style'
           >
             1v1 Lobby
-          </Heading>
+          </Text>
           <Image
             display={{ base: 'inherit', md: 'none' }}
             _hover={{ cursor: 'pointer' }}
