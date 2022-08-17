@@ -16,12 +16,16 @@ const Drafts = () => {
         direction={'row'}
         justifyContent="space-between"
       >
+<<<<<<< HEAD
         <Text
           className="gradient-color font-style"
           fontSize={{ base: '3xl', md: '4xl' }}
         >
           Draft
         </Text>
+=======
+        <Heading className="gradient-color heading">Draft</Heading>
+>>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
         <Image
           _hover={{ cursor: 'pointer' }}
           w={{ base: '9', sm: '12' }}
@@ -50,7 +54,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 My Profile
               </Heading>
             </Button>
@@ -64,7 +68,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Leaderboard
               </Heading>
             </Button>
@@ -78,7 +82,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Prizes
               </Heading>
             </Button>
@@ -91,7 +95,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Game Schedule
               </Heading>
             </Button>
@@ -104,7 +108,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Settings
               </Heading>
             </Button>
@@ -118,7 +122,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Logout
               </Heading>
             </Button>
@@ -132,7 +136,7 @@ const Drafts = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={{ base: 'xs', md: 'sm' }} fontWeight="500">
+              <Heading fontSize={{ base: 'sm', md: 'md' }} fontWeight="500">
                 Home
               </Heading>
             </Button>
@@ -230,6 +234,7 @@ const Drafts = () => {
               Balance
             </Heading>
           </Stack>
+<<<<<<< HEAD
           <Stack
             className="faq"
             maxH={{ base: '60vh', md: '85vh' }}
@@ -404,6 +409,9 @@ const Drafts = () => {
                 </Heading>
               </Box>
             </Stack>
+=======
+          <Stack className='faq' spacing="4">
+>>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
             <Stack
               direction={'row'}
               justifyContent="space-between"

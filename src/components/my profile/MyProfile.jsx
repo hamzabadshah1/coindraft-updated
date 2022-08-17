@@ -13,7 +13,7 @@ import '../../components/drafts/Drafts.css'
 const MyProfile = () => {
   const nav = useNavigate();
   return (
-    <Stack minH={'100vh'} py={{ base: '2',sm:"2", md: '6' }} justifyContent={{base:'space-between',md:'-moz-initial'}} w={'100%'} bg={'#050826'}>
+    <Stack minH={'100vh'} spacing={{base:'0',md:'12'}} py={{ base: '2',sm:"2", md: '2' }} justifyContent={{base:'space-between',md:'initial'}} w={'100%'} bg={'#050826'}>
       {/* mobile header */}
       <Stack
         alignItems={'center'}
@@ -23,7 +23,11 @@ const MyProfile = () => {
         direction={'row'}
         justifyContent="space-between"
       >
+<<<<<<< HEAD
         <Text fontSize={'xl'} className="gradient-color font-style">
+=======
+        <Heading fontSize={'xl'} className="gradient-color heading">
+>>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
           My Profile
         </Text>
         <Image
@@ -44,16 +48,17 @@ const MyProfile = () => {
       <Stack
         spacing={{ base: '0', md: '3' }}
         px={{ base: '1', sm: '2', md: '0' }}
-        py={{ base: '2', sm: '4', md: '8' }}
+        py={{ base: '2', sm: '4', md: '2' }}
         direction={'row'}
       >
         {/* menu */}
         <Stack display={{ base: 'none', md: 'inherit' }} w="35%" pl={'10'}>
           {/* buttons */}
-          <Stack spacing={'7'} w={'50%'}>
+          <Stack spacing={'5'} w={'50%'}>
             <Button
               onClick={() => nav('/')}
               className="button-border"
+              height='40px'
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -61,13 +66,14 @@ const MyProfile = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={'md'} fontWeight="500">
                 Register
               </Heading>
             </Button>
             <Button
             onClick={() => nav('/drafts')}
               className="button-border"
+              height='40px'
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -75,13 +81,14 @@ const MyProfile = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={'md'} fontWeight="500">
                 My Lineup
               </Heading>
             </Button>
             <Button
             onClick={() => nav('/leaderboard')}
               className="button-border"
+              height='40px'
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -89,13 +96,14 @@ const MyProfile = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={'md'} fontWeight="500">
                 Leaderboard
               </Heading>
             </Button>
             <Button
             onClick={() => nav('/prize-payouts')}
               className="button-border"
+              height='40px'
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -103,13 +111,14 @@ const MyProfile = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={'md'} fontWeight="500">
                 Prizes
               </Heading>
             </Button>
             <Button
             onClick={() => nav('/gameschedule')}
               className="button-border"
+              height='40px'
               color={'white'}
               _hover={{
                 bg: 'linear-gradient(180deg, #FCFF00 0%, #3FFF13 100%)',
@@ -117,13 +126,13 @@ const MyProfile = () => {
               }}
               variant={'link'}
             >
-              <Heading fontSize={'sm'} fontWeight="500">
+              <Heading fontSize={'md'} fontWeight="500">
                 Game Schedule
               </Heading>
             </Button>
           </Stack>
 
-          <Stack w={'50%'} mt="10 !important" alignItems={'center'}>
+          <Stack w={'50%'} mt="6 !important" alignItems={'center'}>
             <Image
               _hover={{ cursor: 'pointer' }}
               w={'20'}

@@ -15,18 +15,41 @@ import '../../components/drafts/Drafts.css'
 const Drafts = () => {
   const nav = useNavigate();
   return (
-    <Stack minH={'100vh'} w={'100%'} bg={'#050826'}>
+    <Stack spacing={{base:'6',md:'12'}} py={{base:'6',md:'12'}} minH={'100vh'} w={'100%'} bg={'#050826'}>
+      {/* header */}
+      <Stack
+      px={'4'}
+        direction={{ base: 'row', md: 'column' }}
+        w={'full'}
+        justify={{ base: 'space-between', md: 'inherit' }}
+      >
+        <Heading
+        textAlign={'center'}
+          className="heading"
+          fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
+          bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
+          bgClip="text"
+        >
+          Prize Payouts
+        </Heading>
+        <Image
+          onClick={() => nav('/')}
+          display={{ base: 'inherit', md: 'none' }}
+          _hover={{ cursor: 'pointer' }}
+          w={{ base: '10', sm: '20', md: '28', lg: '40' }}
+          src={logo}
+        />
+      </Stack>
       <Stack direction={{ base: 'column', md: 'row' }} px={4}>
         {/* home buttons */}
         <Stack
           w={{ base: '100%', md: '40%' }}
-          pt={'40'}
           display={{ base: 'none', md: 'inherit', lg: 'inherit' }}
         >
           {/* buttons */}
           <Stack
             mb="6 !important"
-            spacing={'4'}
+            spacing={'6'}
             w={{ base: '100%', lg: '50%' }}
             px={10}
           >
@@ -99,10 +122,11 @@ const Drafts = () => {
             </Text>
           </Stack>
         </Stack>
-        {/* lineup */}
-        <Stack w={{ base: '100%', md: '60%' }} py={{ base: '4', md: '8' }}>
+        {/* payouts */}
+        <Stack w={{ base: '100%', md: '60%' }}>
           {/* edit lineup */}
           <Stack spacing={'4'} justifyContent={'space-between'}>
+<<<<<<< HEAD
           <Stack
               direction={{ base: 'row', md: 'column' }}
               w={'full'}
@@ -125,6 +149,8 @@ const Drafts = () => {
               src={logo}
             />
             </Stack>
+=======
+>>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
             {/* boxes */}
             <Stack
               spacing={'3'}

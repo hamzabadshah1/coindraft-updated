@@ -98,7 +98,12 @@ const LeaderBoard = () => {
             direction={{ base: 'row', md: 'column' }}
             justify={{ base: 'space-between', md: 'inherit' }}
           >
+<<<<<<< HEAD
             <Text
+=======
+            <Heading
+          className='heading'
+>>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
               as={'h1'}
               fontSize={{ base: '2xl', sm: '4xl', md: '4xl' }}
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"

@@ -45,8 +45,13 @@ const Menu = () => {
           <Text
             alignItems={'center'}
             minW={'fit-content'}
+<<<<<<< HEAD
             fontSize={{ base: '3xl', md: '4xl' }}
             className="gradient-color font-style"
+=======
+            fontSize={{ base: 'xl', md: '4xl' }}
+            className="gradient-color heading"
+>>>>>>> 4c0ad9031747607efc04f4daf8a48d1a70f25336
           >
             Menu
           </Text>
@@ -74,7 +79,7 @@ const Menu = () => {
             <Spacer />
             <Stack>
               <Text fontSize={{base:'sm',md:'md'}} color={'white'} fontWeight={'700'}>
-                Coming On!
+                Coming Soon!
               </Text>
             </Stack>
           </HStack>

@@ -207,7 +207,7 @@ const TrendingCoins = () => {
                 alignItems={'center'}
                 minW={'fit-content'}
                 fontSize={{ base: 'xl', xl: '3xl' }}
-                className="gradient-color"
+                className="gradient-color heading"
               >
                 Trending Coins
               </Heading>
