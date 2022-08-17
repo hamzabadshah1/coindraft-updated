@@ -54,6 +54,7 @@ const Learn = () => {
               fontSize={{ base: 'lg', md: '3xl' }}
               className="faq-text font-style"
               textAlign={'center'}
+              w={'40%'}
             >
               Our FAQ’s
             </Text>

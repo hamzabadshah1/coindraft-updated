@@ -6,6 +6,7 @@ import {
   Tag,
   Text,
   VStack,
+  Spacer,
 } from '@chakra-ui/react';
 import React from 'react';
 import '../../App.css';
@@ -26,20 +27,19 @@ const GameSchedule = () => {
         align={'center'}
       >
         {/* Heading Container */}
-        <Stack
-          direction={{ base: 'row', md: 'column' }}
-          w={'full'}
-          align={{ base: 'center' }}
-          justify={{ base: 'space-between', md: 'inherit' }}
-        >
+        <Stack direction={{ base: 'row', md: 'column' }} w={'full'}>
           <Text
+            textAlign={{ base: 'left', md: 'center' }}
+            className="font-style"
             fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
             bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
             bgClip="text"
-            className="font-style"
+            w={{ base: '60%', md: '100%' }}
           >
             Game Schedule
           </Text>
+
+          <Spacer />
           <Image
             onClick={() => nav('/')}
             display={{ base: 'inherit', md: 'none' }}

@@ -23,7 +23,7 @@ const MyProfile = () => {
         direction={'row'}
         justifyContent="space-between"
       >
-        <Text fontSize={'xl'} className="gradient-color font-style">
+        <Text fontSize={'xl'} w={'40%'} className="gradient-color font-style">
           My Profile
         </Text>
         <Image
@@ -33,15 +33,18 @@ const MyProfile = () => {
           onClick={() => nav('/home')}
         />
       </Stack>
-      <Text
-        display={{ base: 'none', md: 'flex' }}
-        alignSelf="center"
-        textAlign={'center !important'}
-        className="gradient-color font-style"
-        fontSize={{ base: '3xl', md: '4xl' }}
-      >
-        My Profile
-      </Text>
+      <Stack  width={'100%'} display={{ base: 'none', md: 'flex' }}>
+        <Text
+          
+          alignSelf="center"
+          textAlign={'center !important'}
+          className="gradient-color font-style"
+          fontSize={{ base: '3xl', md: '4xl' }}
+          width={'100%'}
+        >
+          My Profile
+        </Text>
+      </Stack>
       <Stack
         spacing={{ base: '0', md: '3' }}
         px={{ base: '1', sm: '2', md: '0' }}

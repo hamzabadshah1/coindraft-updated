@@ -22,7 +22,7 @@ import icon8 from '../../assets/images/icon7.png';
 import icon9 from '../../assets/images/icon7.png';
 import icon10 from '../../assets/images/icon5-1.png';
 import { useNavigate } from 'react-router-dom';
-import '../../components/drafts/Drafts.css';
+import '../../components/drafts/Drafts.css'
 
 const Menu = () => {
   const nav = useNavigate();
@@ -39,7 +39,7 @@ const Menu = () => {
         spacing={'3'}
         px={{ base: '4', md: '0' }}
         w={{ base: '100%', md: '60%', lg: '40%' }}
-        pt={{ base: '5', md: '2' }}
+        pt={{base:'5',md:'2'}}
       >
         <HStack>
           <Text
@@ -47,14 +47,16 @@ const Menu = () => {
             minW={'fit-content'}
             fontSize={{ base: '3xl', md: '4xl' }}
             className="gradient-color font-style"
+            w={'40%'}
+
           >
             Menu
           </Text>
           <Spacer />
           <Stack>
             <Image
-              onClick={() => nav('/home')}
-              _hover={{ cursor: 'pointer' }}
+            onClick={()=>nav('/home')}
+              _hover={{ cursor: 'pointer'}}
               w={'14'}
               src={logo}
             />
@@ -64,24 +66,16 @@ const Menu = () => {
         <Stack bgColor={'#25294A'} borderRadius={'15px'} p={4}>
           <HStack>
             <Stack>
-              <Text
-                fontSize={{ base: 'sm', md: 'md' }}
-                color={'white'}
-                fontWeight={'700'}
-              >
+              <Text fontSize={{base:'sm',md:'md'}} color={'white'} fontWeight={'700'}>
                 Refer Your Friends!
               </Text>
-              <Text fontSize={{ base: 'sm', md: 'md' }} color={'white'}>
+              <Text fontSize={{base:'sm',md:'md'}}color={'white'}>
                 Refer Your Friends For Big Bonuses
               </Text>
             </Stack>
             <Spacer />
             <Stack>
-              <Text
-                fontSize={{ base: 'sm', md: 'md' }}
-                color={'white'}
-                fontWeight={'700'}
-              >
+              <Text fontSize={{base:'sm',md:'md'}} color={'white'} fontWeight={'700'}>
                 Coming Soon!
               </Text>
             </Stack>
@@ -90,8 +84,8 @@ const Menu = () => {
       </Stack>
 
       <SimpleGrid
-        py={{ base: '4', lg: '3' }}
-        px={{ base: '4', md: '0' }}
+      py={{base:"4",lg:'3'}}
+      px={{base:"4",md:'0'}}
         columns={[1, 2, 3]}
         w={{ base: '100%', md: '60%', lg: '40%' }}
         spacing="20px"
@@ -200,7 +194,7 @@ const Menu = () => {
             <Image src={icon10} w={'12'} />
           </Stack>
           <Text color={'#96A9DE'} fontSize={'sm'} textAlign={'center'}>
-            Game Schedule
+          Game Schedule
           </Text>
         </Stack>
         <Stack

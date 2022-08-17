@@ -7,6 +7,7 @@ import {
   Text,
   Center,
   Divider,
+  Spacer,
 } from '@chakra-ui/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -23,22 +24,19 @@ const Drafts = () => {
       bg={'#050826'}
     >
       {/* header */}
-      <Stack
-        px={'4'}
-        direction={{ base: 'row', md: 'column' }}
-        w={'full'}
-        justify={{ base: 'space-between', md: 'inherit' }}
-      >
+      <Stack px={'4'} direction={{ base: 'row', md: 'column' }} w={'full'}>
         <Text
-          textAlign={'center'}
+          textAlign={{ base: 'left', md: 'center' }}
           className="font-style"
           fontSize={{ base: '3xl', sm: '4xl', md: '4xl' }}
           bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
           bgClip="text"
-
+          w={{ base: '60%', md: '100%' }}
         >
           Prize Payouts
         </Text>
+
+        <Spacer />
         <Image
           onClick={() => nav('/')}
           display={{ base: 'inherit', md: 'none' }}
@@ -133,8 +131,6 @@ const Drafts = () => {
         <Stack w={{ base: '100%', md: '60%' }}>
           {/* edit lineup */}
           <Stack spacing={'4'} justifyContent={'space-between'}>
-           
-
             {/* boxes */}
             <Stack
               spacing={'3'}

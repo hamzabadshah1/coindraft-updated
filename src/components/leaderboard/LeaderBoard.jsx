@@ -104,6 +104,7 @@ const LeaderBoard = () => {
               bgGradient="linear(180deg, #FCFF00 40%, #3FFF13 100%)"
               bgClip="text"
               className="font-style"
+            
             >
               Leaderboard
             </Text>

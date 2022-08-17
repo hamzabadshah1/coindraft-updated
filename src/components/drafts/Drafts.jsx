@@ -1,4 +1,12 @@
-import { Box, Button, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Heading,
+  Image,
+  Stack,
+  Text,
+  chakra,
+} from '@chakra-ui/react';
 import React from 'react';
 import './Drafts.css';
 import { useNavigate } from 'react-router-dom';
@@ -17,18 +25,22 @@ const Drafts = () => {
         direction={'row'}
         justifyContent="space-between"
       >
-        <Text
-          className="gradient-color font-style"
-          fontSize={{ base: '3xl', md: '4xl' }}
-        >
-          Draft
-        </Text>
-        <Image
-          _hover={{ cursor: 'pointer' }}
-          w={{ base: '9', sm: '12' }}
-          src={logo}
-          onClick={() => nav('/home')}
-        />
+        <Stack width={'90%'}>
+          <Text
+            className="gradient-color font-style"
+            fontSize={{ base: '3xl', md: '4xl' }}
+          >
+            Draft
+          </Text>
+        </Stack>
+        <Stack width={'10%'}>
+          <Image
+            _hover={{ cursor: 'pointer' }}
+            w={{ base: '9', sm: '12' }}
+            src={logo}
+            onClick={() => nav('/home')}
+          />
+        </Stack>
       </Stack>
       {/*  */}
       <Stack direction={'row'} justifyContent="space-between">
